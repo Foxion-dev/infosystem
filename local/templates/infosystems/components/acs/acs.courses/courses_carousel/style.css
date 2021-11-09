@@ -1,0 +1,8 @@
+.coursers-carousel.owl-carousel .owl-nav button{transition:0.3s; position:absolute;top: 0px;bottom: 60px;margin: auto; border-radius: 50%;opacity: 1;} 
+.coursers-carousel.owl-carousel .owl-nav button i{font-weight: 100;font-size: 26px;color: #fff;line-height: 50px;position: relative;top: 1px;}
+.coursers-carousel.owl-carousel .owl-nav button.owl-prev{left:-30px;}
+.coursers-carousel.owl-carousel .owl-nav button.owl-next{right:-30px;}
+.coursers-carousel.owl-carousel .owl-nav{z-index: 2;position: unset;}
+.coursers-carousel.owl-carousel .owl-nav button.disabled{opacity:0.5}
+.coursers-carousel.owl-carousel .owl-nav button.owl-next.disabled i:hover:before{background: url(/local/templates/infosystems/images/srt-right.png) no-repeat;}
+.coursers-carousel.owl-carousel .owl-nav button.owl-prev.disabled i:hover:before{background: url(/local/templates/infosystems/images/srt_left.png) no-repeat;}

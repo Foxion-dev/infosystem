@@ -1,0 +1,8 @@
+.heading-wrapper .button.rew-custom-btn{width: 175px;min-width: 175px;margin: 0px 20px;position:relative;text-align: center;padding: 15px;background: #8cd50b;-webkit-border-radius: 5px;border-radius: 5px;color: #272727;white-space: nowrap;}
+.heading-wrapper .button.rew-custom-btn:after{content:'\f054';font-family:fontawesome;padding-left: 10px;}
+.heading-wrapper .button.rew-custom-btn:hover{background:#7cbd0a; color:#272727}
+@media(max-width: 500px){
+	.reviews-in-course .reviews .heading-wrapper{display:block}
+	.reviews-in-course .reviews .heading-wrapper h5{display: block;float: none;text-align: center;}
+	.reviews-in-course .reviews .heading-wrapper a{display: block;float: none;text-align: center;width:100%;margin: 20px 0px;}
+}

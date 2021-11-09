@@ -1,0 +1,11 @@
+.news-list{	word-wrap: break-word; }
+.news-list .news-item-body{}
+.news-list .news-item-body .news-item-title{ /*font-size: large; text-transform: uppercase;*/ margin-bottom: 10px; }
+.news-list .news-item-body .news-item-title{ font-size: 13px; text-transform: uppercase; }
+.news-list .news-item-body .news-item-title .news-date-time{ color: #777; font-size: small; }
+
+@media (max-width: 767px) {
+	.news-list .news-item-body .photo-block .album--small {
+		display: block;
+	}
+}

@@ -1,0 +1,487 @@
+
+Options -Indexes
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+	php_flag allow_call_time_pass_reference 1
+	php_flag session.use_trans_sid off
+
+	#php_value display_errors 1
+
+	#php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+
+	# с без www на www
+	RewriteCond %{HTTP_HOST} !^www\.(.*) [NC]
+	RewriteCond %{REQUEST_URI} !^/bitrix/.*$ [NC]
+    RewriteRule ^(.*)$ https://www.infosystems.ru/$1 [R=301,L]
+
+	# с http на https
+    RewriteCond %{SERVER_PORT} ^80$ [OR]
+    RewriteCond %{HTTP} =on
+    RewriteRule ^(.*)$ https://www.infosystems.ru/$1 [R=301,L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+	RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+	Redirect 301 /timetable.html /courses/
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/certified-ethical-hacker/ceh-v8.html /courses/mezhdunarod/ceh_etichnyy_khaking_i_testirovanie_na_proniknovenie/?sphrase_id=56
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/kaspersky/kaspersky-endpoint-security.html /courses/avtorizovannye_kursy/kaspersky_endpoint_security_and_management_bazovyy_kurs/?sphrase_id=57
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/kaspersky/kle-009.10.html /courses/avtorizovannye_kursy/kaspersky_endpoint_security_and_management_upravlenie_sistemami/?sphrase_id=58
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/kaspersky/kl-008.104.html /courses/avtorizovannye_kursy/kaspersky_endpoint_security_and_management_shifrovanie/?sphrase_id=59
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/kaspersky/kle_014.30.html /courses/avtorizovannye_kursy/kaspersky_security_dlya_virtualnykh_sred_zashchita_bez_agenta/?sphrase_id=60
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/apksh/7806.html /courses/avtorizovannye_kursy/administrirovanie_apksh_kontinent_versiya_3_7_bazovyy_kurs/?sphrase_id=61
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/apksh/continent_full.html /courses/avtorizovannye_kursy/administrirovanie_apksh_kontinent_versiya_3_7_polnyy_kurs/?sphrase_id=62
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/apksh/continent_extended.html /courses/avtorizovannye_kursy/administrirovanie_apksh_kontinent_versiya_3_7_rasshirennyy_kurs/?sphrase_id=63
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/exam_preparation/cisa.html /courses/mezhdunarod/audit_informatsionnykh_sistem_cisa/?sphrase_id=64
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/vgate/vgate.html /courses/avtorizovannye_kursy/zashchita_virtualnykh_infrastruktur_sredstvami_v_gate/?sphrase_id=72
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/cryptopro/pki.html /courses/avtorizovannye_kursy/ispolzovanie_elektronnoy_podpisi_i_pki_organizatsionno_pravovye_aspekty_i_tekhnicheskaya_realizatsiya/?sphrase_id=73
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/exam_preparation/cism.html /courses/mezhdunarod/menedzher_po_informatsionnoy_bezopasnosti_cism/?sphrase_id=74
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/cryptopro/operator_seat.html /courses/avtorizovannye_kursy/operatorskoe_mesto_v_pak_kriptopro_uts_upravlenie_klyuchevymi_dannymi_polzovateley/?sphrase_id=75
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/cryptopro/10884.html /courses/avtorizovannye_kursy/poryadok_razvertyvaniya_i_primeneniya_sluzhb_elektronnoy_podpisi_sluzhb_proverki_elektronnykh_sertif/?sphrase_id=78
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/secret_net/secret_net_7_bazovyj_kurs.html /courses/avtorizovannye_kursy/primenenie_sistemy_zashchity_secret_net_7_bazovyy_kurs/?sphrase_id=79
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/secret_net/secret_net_7_full.html /courses/avtorizovannye_kursy/primenenie_sistemy_zashchity_secret_net_7_rasshirennyy_kurs/?sphrase_id=79
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/secret_net/9853.html /courses/avtorizovannye_kursy/primenenie_sistemy_zashchity_secret_net_studio_/?sphrase_id=80
+	Redirect 301 /services/informacionnaya/avtorskie_kursy_149/sm019.html /courses/avtorizovannye_kursy/razrabotka_programmnogo_obespecheniya_dlya_sailfish_mobile_os_rus/?sphrase_id=82
+	Redirect 301 /services/informacionnaya/avtorskie_kursy_149/information-security-audit-level-1.html /courses/avtorskie_kursy/audit_bezopasnosti_chast_1/?sphrase_id=88
+	Redirect 301 /services/informacionnaya/avtorskie_kursy_149/is011.html /courses/avtorskie_kursy/zashchita_ot_khakerskikh_atak_i_vzlomov/?sphrase_id=91
+	Redirect 301 /services/informacionnaya/avtorskie_kursy_149/1472.html /courses/avtorskie_kursy/informatsionnaya_bezopasnost_kii_korporativnye_tsentry_monitoringa_kompyuternykh_atak/?sphrase_id=92
+	Redirect 301 /services/informacionnaya/avtorskie_kursy_149/kompleksnaja-zashhita-obektov-tjek.html /courses/avtorskie_kursy/kompleksnaya_zashchita_obektov_tek_ot_terroristicheskikh_ugroz/?sphrase_id=93
+	Redirect 301 /services/informacionnaya/avtorskie_kursy_149/kompyuternaya_kriminalistika.html /courses/avtorskie_kursy/kompyuternaya_kriminalistika/?sphrase_id=96
+	Redirect 301 /services/informacionnaya/kursy__soglasov_742/obespechenie-bezopasnosti-toplivno-jenergeticheskogo-kompleksa.html /courses/avtorskie_kursy/obespechenie_bezopasnosti_i_antiterroristicheskoy_zashchishchennosti_obektov_toplivno_energetichesko/?sphrase_id=95
+	Redirect 301 /services/informacionnaya/avtorskie_kursy_149/is003.html /courses/avtorskie_kursy/primenenie_infrastruktury_otkrytykh_klyuchey/?sphrase_id=101
+	Redirect 301 /services/informacionnaya/kursy__soglasov_742/attestaciya_obektov_informatizacii.html /courses/kursy_soglasovannye_s_federalnymi_organami/attestatsiya_obektov_informatizatsii_po_trebovaniyam_bezopasnosti_informatsii_programma_kursa_soglas/?sphrase_id=104
+	Redirect 301 /services/informacionnaya/kursy__soglasov_742/4845/4844.html /courses/kursy_soglasovannye_s_federalnymi_organami/informatsionnaya_bezopasnost_v_obeme_106_chasov_/?sphrase_id=105
+	Redirect 301 /services/informacionnaya/kursy__soglasov_742/7765/id_6817.html /courses/kursy_soglasovannye_s_federalnymi_organami/informatsionnaya_bezopasnost_v_obeme_512_chasov/?sphrase_id=105
+	Redirect 301 /services/informacionnaya/kursy__soglasov_742/bezopasnost-pers.dannyh-v-inf.sistemah.html /courses/kursy_soglasovannye_s_federalnymi_organami/obespechenie_bezopasnosti_personalnykh_dannykh_pri_ikh_obrabotke_v_informatsionnykh_sistemax_persona/?sphrase_id=106
+	Redirect 301 /services/informacionnaya/kursy__soglasov_742/7765/10676.html /courses/kursy_soglasovannye_s_federalnymi_organami/programma_professionalnoy_perepodgotovki_informatsionnaya_bezopasnost_tekhnicheskaya_zashchita_konfi/?sphrase_id=108
+	Redirect 301 /services/informacionnaya/kursy__soglasov_742/tzi_v_asu_tp.html /courses/kursy_soglasovannye_s_federalnymi_organami/tekhnicheskaya_zashchita_informatsii_v_avtomatizirovannykh_sistemakh_upravleniya_proizvodstvennymi_i/?sphrase_id=109
+	Redirect 301 /services/informacionnaya/banking_technology/antifrod_i_zashhita_bankovskih_sistem/antifraud01.html /courses/informatsionnaya_bezopasnost_bankov/antifrod_i_zashchita_bankovskikh_sistem_arsenal_zloumyshlennikov_i_ispolzuemye_imi_uyazvimosti/?sphrase_id=112
+	Redirect 301 /services/informacionnaya/banking_technology/antifrod_i_zashhita_bankovskih_sistem/antifraud04.html /courses/informatsionnaya_bezopasnost_bankov/antifrod_i_zashchita_bankovskikh_sistem_zashchishchennoe_programmirovanie/?sphrase_id=113
+	Redirect 301 /services/informacionnaya/banking_technology/antifrod_i_zashhita_bankovskih_sistem/antifraud02.html /courses/informatsionnaya_bezopasnost_bankov/antifrod_i_zashchita_bankovskikh_sistem_postroenie_mnogourovnevoy_zashchity_zashchita_ot_atak/?sphrase_id=114
+	Redirect 301 /services/informacionnaya/banking_technology/antifrod_i_zashhita_bankovskih_sistem/antifraud03.html /courses/informatsionnaya_bezopasnost_bankov/antifrod_i_zashchita_bankovskikh_sistem_provedenie_rassledovaniy_intsidentov_i_sbor_dokazatelstv_dlya/?sphrase_id=115
+	Redirect 301 /services/informacionnaya/avtorskie_kursy_149/anti-fraud.-integrated-countermeasures-against-office-crime.html /courses/informatsionnaya_bezopasnost_bankov/antifrod_kompleksnoe_protivodeystvie_moshennichestvu_personala/?sphrase_id=116
+	Redirect 301 /services/informacionnaya/banking_technology/gost_57580_1.html /courses/informatsionnaya_bezopasnost_bankov/vvedenie_vnedrenie_i_otsenka_sootvetstviya_finansovykh_organizatsiy_gost_r_57580_bezopasnost_finanso/?sphrase_id=117
+	Redirect 301 /services/inform_security/astra_linux/9069.html /courses/astra_linux/astra_linux_dlya_polzovateley/?sphrase_id=121
+	Redirect 301 /services/inform_security/astra_linux/astra_linux.html /courses/astra_linux/administrirovanie_operatsionnoy_sistemy_astra_linux/?sphrase_id=122
+	Redirect 301 /services/inform_security/unix/freebsd/freebsd1.html /courses/freebsd/administrirovanie_freebsd/?sphrase_id=123
+	Redirect 301 /services/inform_security/unix/freebsd/freebsd2.html /courses/freebsd/bazovaya_podderzhka_freebsd/?sphrase_id=124
+	Redirect 301 /services/inform_security/unix/freebsd/freebsdsafety.html /courses/freebsd/bezopasnost_setey_na_baze_freebsd/?sphrase_id=125
+	Redirect 301 /services/inform_security/linux/ochno/linux_tex_sp/ln08 /courses/linux/administrirovanie_linux_chast_1/?sphrase_id=126
+	Redirect 301 /services/inform_security/linux/ochno/linux_tex_sp/ln07.html /courses/linux/administrirovanie_linux_chast_2/?sphrase_id=126
+	Redirect 301 /services/inform_security/linux/ochno/linux_tex_sp/ln09.html /courses/linux/bezopasnost_setey_na_baze_linux_unix/?sphrase_id=127
+	Redirect 301 /services/inform_security/linux/ochno/linux_tex_sp/ln06.html /courses/linux/ispolzovanie_linux_v_setyakh_windows/?sphrase_id=128
+	Redirect 301 /services/inform_security/linux/ochno/linux_tex_sp/ln05.html /courses/linux/programmirovanie_v_linux_na_c_c_/?sphrase_id=129
+	Redirect 301 /services/inform_security/linux/ochno/linux_tex_sp/ln04.html /courses/linux/razrabotka_drayverov_i_ustroystv_v_linux_i_android/?sphrase_id=130
+	Redirect 301 /services/inform_security/software_engineering/cod.html /courses/infrastruktura_tsod/arkhitektura_tsod/?sphrase_id=131
+	Redirect 301 /services/inform_security/software_engineering/cod_s.html /courses/infrastruktura_tsod/inzhenernaya_infrastruktura_v_tsod/?sphrase_id=132
+	Redirect 301 /services/inform_security/software_engineering/monitoring_the_data_center.html /courses/infrastruktura_tsod/monitoring_tsod/?sphrase_id=131
+	Redirect 301 /services/inform_security/software_engineering/requirements-and-recommendations-of-tia-942.html /courses/infrastruktura_tsod/trebovaniya_i_rekomendatsii_standarta_tia_942/?sphrase_id=133
+	Redirect 301 /services/inform_security/software_engineering/jekspluatacija_cod.html /courses/infrastruktura_tsod/ekspluatatsiya_tsod/?sphrase_id=134
+	Redirect 301 /services/inform_security/s-terra/s-terra_sm.html /courses/s_terra/zashchita_setevoi_infrastruktury_na_osnove_produktov_s_terra/?sphrase_id=136
+	Redirect 301 /services/konkurentnaya_r_638/kr008.html /courses/razvedka/mashinnoe_obuchenie_i_neyronnye_seti_bazovyy_uroven/?sphrase_id=140
+	Redirect 301 /services/konkurentnaya_r_638/kr006.html /courses/razvedka/metody_kiberrazvedki_novyy_arsenal_osint_v_tsifrovom_mire/?sphrase_id=141
+	Redirect 301 /services/konkurentnaya_r_638/kr007.html /courses/razvedka/metody_kiberrazvedki_novyy_arsenal_osint_v_tsifrovom_mire_bazovyy_kurs/?sphrase_id=142
+	Redirect 301 /services/konkurentnaya_r_638/competitive_intelligence/seminar_trening.html?jn111d205f=2 /courses/razvedka/poiskovye_sistemy_i_konkurentnaya_razvedka_v_internete/?sphrase_id=143
+	Redirect 301 /services/konkurentnaya_r_638/kr011.html /courses/razvedka/upravlenie_reputatsiey_i_zashchita_brenda_v_internete/?sphrase_id=146
+	Redirect 301 /services/economic_security/7446.html /courses/ekonomicheskaya/analiz_finansovo_khozyaystvennoy_deyatelnosti_predpriyatiya_v_ramkakh_obespecheniya_ekonomicheskoy_b/?sphrase_id=148
+	Redirect 301 /services/economic_security/7299.html /courses/ekonomicheskaya/antikorruptsionnyy_komplaens_vypolnenie_trebovaniy_zakonodatelstva_po_protivodeystviyu_korruptsii_fo/?sphrase_id=149
+	Redirect 301 /services/economic_security/es051.html /courses/ekonomicheskaya/informatsionnaya_bezopasnost_v_strukture_sluzhby_bezopasnosti_predpriyatiya/?sphrase_id=150
+	Redirect 301 /services/economic_security/10114.html /courses/ekonomicheskaya/informatsionnaya_bezopasnost_kak_funktsionalnaya_sostavlyayushchaya_deyatelnosti_rukovoditelya_sluzh/?sphrase_id=151
+	Redirect 301 /services/economic_security/10380.html /courses/ekonomicheskaya/informatsionno_analiticheskaya_rabota_sluzhby_ekonomicheskoy_bezopasnosti/?sphrase_id=152
+	Redirect 301 /services/economic_security/es200.html /courses/ekonomicheskaya/kompleksnaya_programma_spetsialnaya_psikhologicheskaya_podgotovka_dlya_sluzhb_bezopasnosti_i_kadrov/?sphrase_id=154
+	Redirect 301 /services/economic_security/7297.html /courses/ekonomicheskaya/metodika_provedeniya_vnutrennikh_rassledovaniy_proverok_v_otnoshenii_sotrudnikov/?sphrase_id=156
+	Redirect 301 /services/economic_security/es104.html /courses/ekonomicheskaya/obespechenie_ekonomicheskoy_bezopasnosti_predpriyatiy_v_sfere_stroitelstva/?sphrase_id=157
+	Redirect 301 /services/economic_security/obespechenie_be_608.html /courses/ekonomicheskaya/okhrana_konfidentsialnoy_informatsii_sostavlyayushchey_kommercheskuyu_taynu/?sphrase_id=158
+	Redirect 301 /services/economic_security/7296.html /courses/ekonomicheskaya/ekonomicheskaya_bezopasnost/?sphrase_id=159
+	Redirect 301 /services/economic_security/es043.html /courses/ekonomicheskaya/psikhologicheskie_osnovy_obespecheniya_kadrovoy_bezopasnosti/?sphrase_id=161
+	Redirect 301 /services/economic_security/es401.html /courses/ekonomicheskaya/upravlenie_riskami_organizatsii/?sphrase_id=162
+	Redirect 301 /services/economic_security/economical_security.html /courses/ekonomicheskaya/ekonomicheskaya_bezopasnost_predpriyatiya_metodologiya_deyatelnosti_sluzhby_ekonomicheskoy_bezopasno/?sphrase_id=164
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/certified-ethical-hacker/ceh-v8.html /courses/mezhdunarod/ceh_etichnyy_khaking_i_testirovanie_na_proniknovenie/?sphrase_id=56
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/exam_preparation/cisa.html /courses/mezhdunarod/audit_informatsionnykh_sistem_cisa/?sphrase_id=64
+	Redirect 301 /services/informacionnaya/avtorizovannye_kursy/exam_preparation/cism.html /courses/mezhdunarod/menedzher_po_informatsionnoy_bezopasnosti_cism/?sphrase_id=74
+	Redirect 301 /services/inzhenerno-tehnicheskaja_zashhita/10658.html /courses/kompleksnaya/antiterroristicheskaya_zashchita_obekta_territorii_predpriyatiya_sostavlenie_pasporta_bezopasnosti_o/
+	Redirect 301 /services/inzhenerno-tehnicheskaja_zashhita.html /courses/kompleksnaya/kompleksnaya_inzhenerno_tekhnicheskaya_zashchita_i_okhrana_obektov/?sphrase_id=165
+	Redirect 301 /services/inzhenerno-tehnicheskaja_zashhita/itz010.html    /courses/kompleksnaya/sistemy_obespecheniya_kompleksnoy_bezopasnosti_i_osobennosti_ikh_funktsionirovaniya_po_sovremennym_k/?sphrase_id=166
+	Redirect 301 /services/informacionnaya/kursy__soglasov_742/4845/10761.html /
+	Redirect 301 /services/informacionnaya/kursy__soglasov_742/4845/10764.html /
+    #02.06.2021
+    Redirect 301 /courses/ekonomicheskaya/povyshenie_kvalifikatsii_v_ramkakh_dopolnitelnoy_obrazovatelnoy_programmy_ekonomicheskaya_bezopasnos/ /courses/ekonomicheskaya/ES010/
+    Redirect 301 /courses/ekonomicheskaya/ekonomicheskaya_bezopasnost_predpriyatiya_metodologiya_deyatelnosti_sluzhby_ekonomicheskoy_bezopasno/ /courses/ekonomicheskaya/ES020/
+    Redirect 301 /courses/ekonomicheskaya/informatsionno_analiticheskaya_rabota_sluzhby_ekonomicheskoy_bezopasnosti/ /courses/ekonomicheskaya/ES030-1/
+    Redirect 301 /courses/ekonomicheskaya/kompleksnyy_kurs_po_proverke_kontragentov/ /courses/ekonomicheskaya/ES030/
+    Redirect 301 /courses/ekonomicheskaya/analiz_finansovo_khozyaystvennoy_deyatelnosti_predpriyatiya_v_ramkakh_obespecheniya_ekonomicheskoy_b/ /courses/ekonomicheskaya/ES060/
+    Redirect 301 /courses/ekonomicheskaya/kadrovaya_bezopasnost_kompanii/ /courses/ekonomicheskaya/ES040/
+    Redirect 301 /courses/ekonomicheskaya/priem_i_uvolnenie_personala_s_pozitsii_bezopasnosti/ /courses/ekonomicheskaya/ES041/
+    Redirect 301 /courses/ekonomicheskaya/metodika_provedeniya_vnutrennikh_rassledovaniy_proverok_v_otnoshenii_sotrudnikov/ /courses/ekonomicheskaya/ES042/
+    Redirect 301 /courses/ekonomicheskaya/psikhologicheskie_osnovy_obespecheniya_kadrovoy_bezopasnosti/ /courses/ekonomicheskaya/ES043/
+    Redirect 301 /courses/ekonomicheskaya/organizatsionno_metodicheskoe_dokumentatsionnoe_i_tekhnicheskoe_obespechenie_deyatelnosti_po_informa/ /courses/ekonomicheskaya/ES051/
+    Redirect 301 /courses/ekonomicheskaya/rezhim_kommercheskoy_tayny_i_organizatsiya_konfidentsialnogo_deloproizvodstva_na_predpriyatiyakh/ /courses/ekonomicheskaya/ES050/
+    Redirect 301 /courses/ekonomicheskaya/profilaktika_korruptsii_v_kommercheskikh_organizatsiyakh_i_organizatsiyakh_kontroliruemykh_goskorpor/ /courses/ekonomicheskaya/ES080-1/
+
+    Redirect 301 /courses/ekonomicheskaya/upravlenie_riskami_organizatsii/ /courses/ekonomicheskaya/ES106/
+    Redirect 301 /courses/ekonomicheskaya/obespechenie_ekonomicheskoy_bezopasnosti_predpriyatiy_v_sfere_stroitelstva/ /courses/ekonomicheskaya/ES104/
+    Redirect 301 /courses/ekonomicheskaya/upravlenie_elektronnymi_dokumentami_yuridicheskaya_znachimost_i_sudebnaya_praktika/ /courses/ekonomicheskaya/ED001/
+    Redirect 301 /courses/ekonomicheskaya/informatsionnaya_bezopasnost_kak_chast_kompleksnoy_bezopasnosti_predpriyatiya_problematika_zashchity/ /courses/ekonomicheskaya/ES050-1/
+    Redirect 301 /courses/ekonomicheskaya/kompleksnaya_programma_spetsialnaya_psikhologicheskaya_podgotovka_dlya_sluzhb_bezopasnosti_i_kadrov/ /courses/ekonomicheskaya/ES200/
+    Redirect 301 /courses/ekonomicheskaya/profayling_tekhniki_raspoznavaniya_skrytykh_motivov_povedeniya_obekta_v_protsesse_professionalnoy_de/ /courses/ekonomicheskaya/ES201/
+    Redirect 301 /courses/ekonomicheskaya/uglublennyy_kurs_po_profaylingu_tekhniki_raspoznavaniya_skrytykh_motivov_povedeniya_obekta_v_protses/ /courses/ekonomicheskaya/ES202/
+    Redirect 301 /courses/ekonomicheskaya/praktika_vedeniya_effektivnykh_peregovorov/ /courses/ekonomicheskaya/ES300/
+    Redirect 301 /courses/ekonomicheskaya/peregovory_s_predstavitelyami_organov_vlasti_i_silovykh_struktur/ /courses/ekonomicheskaya/ES301/
+    Redirect 301 /courses/ekonomicheskaya/peregovory_po_sokrashcheniyu_debitorskoy_zadolzhennosti/ /courses/ekonomicheskaya/ES302/
+    Redirect 301 /courses/ekonomicheskaya/transformatsiya_ekonomicheskoy_i_kadrovoy_bezopasnosti_v_usloviyakh_krizisa_i_pandemii/ /courses/ekonomicheskaya/ES010Promo/
+    Redirect 301 /courses/ekonomicheskaya/psikhologiya_v_kadrovoy_bezopasnosti_kak_vovremya_vyyavit_riski_chelovecheskogo_faktora/ /courses/ekonomicheskaya/ES200Promo/
+    Redirect 301 /courses/ekonomicheskaya/klyuchevye_pravila_upravleniya_riskami/ /courses/ekonomicheskaya/ES106_Promo/
+    Redirect 301 /courses/ekonomicheskaya/luchshie_mirovye_praktiki_protivodeystviya_moshennichestvu_v_primenenii_k_realiyam_rossiyskogo_bizne/ /courses/ekonomicheskaya/ES101Promo/
+    Redirect 301 /courses/ekonomicheskaya/protivodeystvie_korporativnomu_moshenichestvu_na_predpriyatii/ /courses/ekonomicheskaya/ES101/
+    Redirect 301 /courses/ekonomicheskaya/kompleksnyy_kurs_dlya_rukovoditeley_obespechenie_bezopasnosti_kompanii_organizatsionnye_i_praktiches/ /courses/ekonomicheskaya/ES070/
+    Redirect 301 /courses/ekonomicheskaya/ugolovno_pravovye_riski_biznesa_strategiya_i_taktika_zashchity_pri_proverkakh_pravookhranitelnykh_or/ /courses/ekonomicheskaya/ES107/
+
+    Redirect 301 /courses/ekonomicheskaya/snizhenie_riskov_ispolzovaniya_usilennoy_kvalifitsirovannoy_elektronnoy_podpisi_bez_vedoma_vladeltsa/ /courses/ekonomicheskaya/ED010Promo/
+    Redirect 301 /courses/ekonomicheskaya/bezopasnost_kak_biznes_funktsiya/ /courses/ekonomicheskaya/ES105/
+    Redirect 301 /courses/ekonomicheskaya/psikhologiya_i_taktika_v_peregovornom_protsesse_kak_provesti_rezultativnye_peregovory/ /courses/ekonomicheskaya/ES300-1/
+    Redirect 301 /courses/ekonomicheskaya/protivodeystvie_khishcheniyam_i_provedenie_vnutrennikh_rassledovaniy_v_riteyle/ /courses/ekonomicheskaya/ES108Promo/
+    Redirect 301 /courses/ekonomicheskaya/effektivnye_sposoby_obespecheniya_bezopasnosti_v_riteyle/ /courses/ekonomicheskaya/ES108/
+    Redirect 301 /courses/ekonomicheskaya/protivodeystvie_korruptsii_v_kommercheskikh_organizatsiyakh_i_organizatsiyakh_kontroliruemykh_goskor/ /courses/ekonomicheskaya/ES080/
+    Redirect 301 /courses/ekonomicheskaya/programma_professionalnoy_perepodgotovki_upravlenie_korporativnoy_bezopasnostyu_360/ /courses/ekonomicheskaya/CS-01/
+    Redirect 301 /courses/ekonomicheskaya/bezopasnost_elektronnogo_dokumentooborota_dlya_biznesa_riski_ispolzovaniya_elektronnoy_podpisi_osobe/ /courses/ekonomicheskaya/ED003/
+    Redirect 301 /courses/ekonomicheskaya/pravovye_aspekty_ispolzovaniya_elektronnykh_dokumentov_v_tsifrovoy_ekonomike_perspektivy_vnedreniya_/ /courses/ekonomicheskaya/ED002/
+    Redirect 301 /courses/ekonomicheskaya/upravlenie_debitorskoy_zadolzhennostyu/ /courses/ekonomicheskaya/ES103/
+    Redirect 301 /courses/ekonomicheskaya/novye_metody_obespecheniya_bezopasnosti_biznesa_tekhnologii_protsessy_lyudi/ /courses/ekonomicheskaya/ES071/
+    Redirect 301 /courses/ekonomicheskaya/vnutrenniy_audit_bezopasnosti_organizatsii/ /courses/ekonomicheskaya/ES090/
+    Redirect 301 /courses/razvedka/upravlenie_metodami_konkurentnoy_razvedki_v_internete/ /courses/razvedka/KR001/
+    Redirect 301 /courses/razvedka/poiskovye_sistemy_i_konkurentnaya_razvedka_v_internete/ /courses/razvedka/KR002/
+    Redirect 301 /courses/razvedka/informatsionnaya_bezopasnost_v_internete/ /courses/razvedka/KR003/
+    Redirect 301 /courses/razvedka/tekhnologii_informatsionnogo_protivoborstva_v_internete/ /courses/razvedka/KR004/
+
+    Redirect 301 /courses/razvedka/upravlenie_reputatsiey_i_zashchita_brenda_v_internete/ /courses/razvedka/KR005/
+    Redirect 301 /courses/razvedka/kompleksnaya_programma_metody_kiberrazvedki_novyy_arsenal_osint_v_tsifrovom_mire_/ /courses/razvedka/KR006/
+    Redirect 301 /courses/razvedka/metody_kiberrazvedki_novyy_arsenal_osint_v_tsifrovom_mire_bazovyy_kurs/ /courses/razvedka/KR007/
+    Redirect 301 /courses/razvedka/mashinnoe_obuchenie_i_neyronnye_seti_bazovyy_uroven/ /courses/razvedka/KR008/
+    Redirect 301 /courses/razvedka/analiz_nestrukturirovannoy_informatsii/ /courses/razvedka/KR009/
+    Redirect 301 /courses/razvedka/konkurentnaya_razvedka_dlya_obespecheniya_ekonomicheskoy_bezopasnosti_na_predpriyatii_i_zashchita_ot/ /courses/razvedka/KR020_Promo/
+    Redirect 301 /courses/razvedka/konkurentnaya_razvedka_i_metody_osint_dlya_obespecheniya_bezopasnosti_v_tsifrovom_mire_mesto_provede/ /courses/razvedka/KR010/
+    Redirect 301 /courses/razvedka/konkurentnaya_razvedka_alternativnyy_metod_k_zashchite_informatsii_i_aktivnogo_protivoborstva_v_tsif/ /courses/razvedka/KR011/
+    Redirect 301 /courses/razvedka/obrazovatelnaya_onlayn_konferentsiya_osint_i_bezopasnost_biznesa_kto_osvedomlen_tot_vooruzhen/ /courses/razvedka/1/
+    Redirect 301 /courses/razvedka/videozapis_onlayn_konferentsii_osint_i_bezopasnost_biznesa_kto_osvedomlen_tot_vooruzhen/ /courses/razvedka/2/
+    Redirect 301 /courses/mezhdunarod/cisa_sertifitsirovannyy_auditor_informatsionnykh_sistem/ /courses/mezhdunarod/CISA/
+    Redirect 301 /courses/mezhdunarod/cism_sertifitsirovannyy_menedzher_informatsionnoy_bezopasnosti/ /courses/mezhdunarod/CISM/
+    Redirect 301 /courses/mezhdunarod/ceh_etichnyy_khaking_i_testirovanie_na_proniknovenie/ /courses/mezhdunarod/ISH020/
+
+    Redirect 301 /courses/mezhdunarod/vvedenie_v_sistemy_upravleniya_informatsionnoy_bezopasnostyu_i_iso_iec_27001_2013/ /courses/mezhdunarod/ISM010/
+    Redirect 301 /courses/mezhdunarod/vnedrenie_sistemy_upravleniya_informatsionnoy_bezopasnostyu_na_sootvetstviya_trebovaniyam_standarta_/ /courses/mezhdunarod/ISM020/
+    Redirect 301 /courses/mezhdunarod/vnutrenniy_audit_sistemy_upravleniya_informatsionnoy_bezopasnostyu_na_sootvetstvie_trebovaniyam_iso_/ /courses/mezhdunarod/ISM030/
+    Redirect 301 /courses/mezhdunarod/podgotovka_vedushchego_auditora_sistem_upravleniya_informatsionnoy_bezopasnostyu_po_m_n_standartu_bs/ /courses/mezhdunarod/ISM040/
+    Redirect 301 /courses/mezhdunarod/podgotovka_vedushchego_spetsialista_po_vnedreniyu_iso_iec_27001_2013/ /courses/mezhdunarod/ISM050/
+    Redirect 301 /courses/mezhdunarod/vvedenie_v_sistemu_energeticheskogo_menedzhmenta_i_energoeffektivnosti_i_iso_50001_2018/ /courses/mezhdunarod/EMS01/
+    Redirect 301 /courses/mezhdunarod/vnedrenie_sistemy_energeticheskogo_menedzhmenta_i_energoeffektivnosti_dlya_sootvetstviya_standartu_i/ /courses/mezhdunarod/EMS02/
+    Redirect 301 /courses/mezhdunarod/vnutrenniy_audit_sistemy_energeticheskogo_menedzhmenta_i_energoeffektivnosti_na_sootvetstvie_trebova/ /courses/mezhdunarod/EMS03/
+    Redirect 301 /courses/mezhdunarod/podgotovka_vedushchego_auditora_sistemy_energeticheskogo_menedzhmenta_i_energoeffektivnosti_iso_5000/ /courses/mezhdunarod/EMS04/
+    Redirect 301 /courses/mezhdunarod/vnedrenie_sistemy_ekologicheskogo_menedzhmenta_kachestva_sootvetstvuyushchey_trebovaniyam_iso_14001_/ /courses/mezhdunarod/EMS020/
+    Redirect 301 /courses/mezhdunarod/vnutrenniy_audit_sistemy_ekologicheskogo_menedzhmenta_kachestva_na_sootvetstvie_trebovaniyam_iso_140/ /courses/mezhdunarod/EMS029/
+    Redirect 301 /courses/mezhdunarod/vvedenie_v_sistemy_upravleniya_it_servisami_i_iso_20000_1_2018/ /courses/mezhdunarod/ISM060/
+    Redirect 301 /courses/mezhdunarod/vnedrenie_sistemy_upravleniya_it_servisami_v_sootvetstvii_s_trebovaniyami_iso_iec_20000_1_2018/ /courses/mezhdunarod/ISM061/
+    Redirect 301 /courses/mezhdunarod/vnutrenniy_audit_sistemy_upravleniya_it_servisami_na_sootvetstvie_trebovaniyam_iso_20000_1_2018_podg/ /courses/mezhdunarod/ISM062/
+    Redirect 301 /courses/mezhdunarod/vnedrenie_sistemy_upravleniya_okhranoy_truda_i_proizvodstvennoy_bezopasnostyu_iso_45001_2018/ /courses/mezhdunarod/OHS020/
+    Redirect 301 /courses/mezhdunarod/vnutrenniy_audit_sistemy_upravleniya_okhranoy_truda_i_proizvodstvennoy_bezopasnostyu_iso_45001_2018/ /courses/mezhdunarod/OHS030/
+    Redirect 301 /courses/mezhdunarod/vvedenie_v_sistemy_menedzhmenta_protivodeystviya_korruptsii_iso_37001_2016/ /courses/mezhdunarod/ISO037/
+    Redirect 301 /courses/mezhdunarod/vnutrenniy_audit_sistemy_menedzhmenta_protivodeystviya_korruptsii_iso_37001_2016/ /courses/mezhdunarod/ISO039/
+    Redirect 301 /courses/mezhdunarod/kurs_vedushchego_auditora_sistemy_upravleniya_it_servisami_na_sootvetstvie_trebovaniyam_iso_20000_1_/ /courses/mezhdunarod/ISM063/
+
+    Redirect 301 /courses/mezhdunarod/vnedrenie_sistemy_menedzhmenta_protivodeystviya_korruptsii_iso_37001_2016/ /courses/mezhdunarod/ISO038/
+    Redirect 301 /courses/mezhdunarod/vvedenie_v_sistemy_ekologicheskogo_menedzhmenta_kachestva_sootvetstvuyushchey_trebovaniyam_iso_14001/ /courses/mezhdunarod/EMS010/
+    Redirect 301 /courses/mezhdunarod/vvedenie_v_sistemy_upravleniya_okhranoy_truda_i_proizvodstvennoy_bezopasnostyu_iso_45001_2018/ /courses/mezhdunarod/OHS010/
+    Redirect 301 /courses/mezhdunarod/kurs_vedushchego_auditora_sistemy_upravleniya_okhranoy_truda_i_proizvodstvennoy_bezopasnostyu_iso_45/ /courses/mezhdunarod/SUOT/
+    Redirect 301 /courses/mezhdunarod/kurs_vedushchego_auditora_sistemy_ekologicheskogo_menedzhmenta_kachestva_sootvetstvuyushchey_trebova/ /courses/mezhdunarod/EMS030/
+    Redirect 301 /courses/mezhdunarod/crisc_sertifitsirovannyy_professional_v_oblasti_riskov_i_kontrolya_informatsionnykh_sistem/ /courses/mezhdunarod/CRISC/
+    Redirect 301 /courses/mezhdunarod/cgeit_sertifitsirovannyy_professional_v_oblasti_korporativnogo_upravleniya_it/ /courses/mezhdunarod/CGEIT/
+    Redirect 301 /courses/mezhdunarod/cobit_2019_foundation_osnovy_cobit_2019_/ /courses/mezhdunarod/COBIT/
+
+    Redirect 301 /courses/tekhnologii/proektirovanie_i_razrabotka_konstruktorskoy_dokumentatsiiv_sisteme_kompas_grafik/ /courses/tekhnologii/COMG/
+    Redirect 301 /courses/kompleksnaya/kompleksnaya_inzhenerno_tekhnicheskaya_zashchita_i_okhrana_obektov/ /courses/kompleksnaya/ITZ/
+    Redirect 301 /courses/kompleksnaya/sistemy_obespecheniya_kompleksnoy_bezopasnosti_i_osobennosti_ikh_funktsionirovaniya_po_sovremennym_k/ /courses/kompleksnaya/ITZ010/
+    Redirect 301 /courses/kompleksnaya/antiterroristicheskaya_zashchita_obekta_territorii_predpriyatiya_sostavlenie_pasporta_bezopasnosti_o/ /courses/kompleksnaya/ITZ030/
+    Redirect 301 /courses/kompleksnaya/ekspertnaya_otsenka_sostoyaniya_tekhnicheskoy_ukreplennosti_i_bezopasnosti_razlichnykh_kategoriy_obe/ /courses/kompleksnaya/ITZ020/
+    Redirect 301 /courses/kompleksnaya/realizatsiya_trebovaniy_zakonodatelstva_v_oblasti_antiterroristicheskoy_zashchity_obektov_territoriy/ /courses/kompleksnaya/ITZpromo/
+    Redirect 301 /courses/avtorizovannye_kursy/razrabotka_programmnogo_obespecheniya_dlya_os_avrora_sailfish_mobile_os_rus/ /courses/avtorizovannye_kursy/ISSF010/
+    Redirect 301 /courses/avtorizovannye_kursy/administrirovanie_apksh_kontinent_versiya_3_7_bazovyy_kurs/ /courses/avtorizovannye_kursy/KO001/
+
+    Redirect 301 /courses/avtorizovannye_kursy/administrirovanie_apksh_kontinent_versiya_3_7_polnyy_kurs/ /courses/avtorizovannye_kursy/KO002/
+    Redirect 301 /courses/avtorizovannye_kursy/administrirovanie_apksh_kontinent_versiya_3_7_rasshirennyy_kurs/ /courses/avtorizovannye_kursy/KO003/
+    Redirect 301 /courses/avtorizovannye_kursy/operatorskoe_mesto_v_pak_kriptopro_uts_upravlenie_klyuchevymi_dannymi_polzovateley/ /courses/avtorizovannye_kursy/KP020/
+    Redirect 301 /courses/avtorizovannye_kursy/ispolzovanie_elektronnoy_podpisi_i_pki_organizatsionno_pravovye_aspekty_i_tekhnicheskaya_realizatsiya/ /courses/avtorizovannye_kursy/KP040/
+    Redirect 301 /courses/avtorizovannye_kursy/primenenie_sistemy_zashchity_secret_net_studio_/ /courses/avtorizovannye_kursy/SN003/
+    Redirect 301 /courses/avtorizovannye_kursy/sertifikatsionnyy_test_inzhener_szi_secret_net_studio/ /courses/avtorizovannye_kursy/SN003t/
+    Redirect 301 /courses/avtorizovannye_kursy/zashchita_virtualnykh_infrastruktur_sredstvami_vgate/ /courses/avtorizovannye_kursy/VG001/
+    Redirect 301 /courses/avtorizovannye_kursy/razvyertyvanie_uts_primenenie_skzi_i_ep_na_baze_pak_kriptopro_uts/ /courses/avtorizovannye_kursy/KР010/
+    Redirect 301 /courses/avtorizovannye_kursy/sertifikatsionnyy_test_inzhener_szi_vgate/ /courses/avtorizovannye_kursy/VG001t/
+    Redirect 301 /courses/avtorizovannye_kursy/postroenie_zashchishchennykh_virtualnykh_setey_na_osnove_ipsec_s_ispolzovaniem_algoritmov_shifrovani/ /courses/avtorizovannye_kursy/ST002/
+    Redirect 301 /courses/avtorizovannye_kursy/zashchita_setevoi_infrastruktury_na_osnove_produktov_s_terra/ /courses/avtorizovannye_kursy/ST001/
+    Redirect 301 /courses/avtorizovannye_kursy/poryadok_razvertyvaniya_i_primeneniya_sluzhb_elektronnoy_podpisi_sluzhb_proverki_elektronnykh_sertif/ /courses/avtorizovannye_kursy/KP060/
+    Redirect 301 /courses/avtorizovannye_kursy/administrirovanie_apksh_kontinent_3_7_ispolnenie_2/ /courses/avtorizovannye_kursy/KO004/
+    Redirect 301 /courses/avtorizovannye_kursy/sertifikatsionnoe_testirovanie_inzhener_zashchity_seti_kontinent/ /courses/avtorizovannye_kursy/KO00t/
+    Redirect 301 /courses/avtorizovannye_kursy/devicelock_dlp_dlya_setevykh_administratorov_i_ofitserov_informatsionnoy_bezopasnosti/ /courses/avtorizovannye_kursy/IS054/
+    Redirect 301 /courses/avtorizovannye_kursy/astra_linux_bazovoe_administrirovanie/ /courses/avtorizovannye_kursy/ALSE-1602/
+    Redirect 301 /courses/avtorizovannye_kursy/astra_linux_dlya_polzovateley/ /courses/avtorizovannye_kursy/ALSE-1601/
+    Redirect 301 /courses/avtorizovannye_kursy/kl_002_11_kaspersky_endpoint_security_and_management_bazovyy_kurs/ /courses/avtorizovannye_kursy/KL_002.11/
+
+    Redirect 301 /courses/avtorizovannye_kursy/astra_linux_rasshirennoe_administrirovanie/ /courses/avtorizovannye_kursy/ALSE-1603/
+    Redirect 301 /courses/avtorizovannye_kursy/kl_009_10_kaspersky_endpoint_security_and_management_upravlenie_sistemami/ /courses/avtorizovannye_kursy/KL_009.10/
+    Redirect 301 /courses/avtorizovannye_kursy/kl_014_50_kaspersky_security_dlya_virtualnykh_sred_zashchita_bez_agenta/ /courses/avtorizovannye_kursy/KL_014.50/
+    Redirect 301 /courses/avtorizovannye_kursy/administrirovanie_sistemy_zashchity_informatsii_vipnet/ /courses/avtorizovannye_kursy/VN001/
+    Redirect 301 /courses/avtorizovannye_kursy/astra_linux_setevoe_administrirovanie/ /courses/avtorizovannye_kursy/ALSE-1604/
+    Redirect 301 /courses/avtorizovannye_kursy/administrirovanie_sistemy_zashchity_informatsii_vipnet_win_lin/ /courses/avtorizovannye_kursy/VN004/
+    Redirect 301 /courses/avtorizovannye_kursy/astra_linux_spetsialnyy_kurs/ /courses/avtorizovannye_kursy/ALSE-1605/
+    Redirect 301 /courses/avtorizovannye_kursy/programmno_apparatnye_kompleksy_vipnet/ /courses/avtorizovannye_kursy/VN005/
+    Redirect 301 /courses/avtorizovannye_kursy/proektirovanie_bezopasnosti_sredstvami_check_point_sheck_point_security_engineering_r77_30/ /courses/avtorizovannye_kursy/CP-E77.30/
+    Redirect 301 /courses/avtorizovannye_kursy/uglublennoe_izuchenie_ips_advanced_ips/ /courses/avtorizovannye_kursy/CP-IPS/
+    Redirect 301 /courses/avtorizovannye_kursy/proektirovanie_bezopasnosti_sredstvami_check_point_check_point_security_engineering_r80_10/ /courses/avtorizovannye_kursy/CCSE-R80.10/
+    Redirect 301 /courses/avtorizovannye_kursy/upravlenie_bezopasnostyu_sredstvami_check_point_sheck_point_security_administration_r77_30/ /courses/avtorizovannye_kursy/CP-A77.30/
+    Redirect 301 /courses/avtorizovannye_kursy/upravlenie_bezopasnostyu_sredstvami_check_point_r80_10_check_point_security_administration_r80_10/ /courses/avtorizovannye_kursy/CCSA-R80.10/
+    Redirect 301 /courses/avtorizovannye_kursy/multidomennoe_upravlenie_politikami_bezopasnosti_s_ispolzovaniem_virtualnykh_sistem_r77_multi_domain/ /courses/avtorizovannye_kursy/CP-VSX-R77/
+    Redirect 301 /courses/avtorizovannye_kursy/master_bezopasnosti_check_point_ccsm_r80_10/ /courses/avtorizovannye_kursy/CCSM-R80.10/
+
+    Redirect 301 /courses/avtorizovannye_kursy/master_bezopasnosti_check_point_sheck_point_security_master/ /courses/avtorizovannye_kursy/CP-SM77/
+    Redirect 301 /courses/avtorizovannye_kursy/firewall_9_0_poisk_i_reshenie_problem/ /courses/avtorizovannye_kursy/Pan330/
+    Redirect 301 /courses/avtorizovannye_kursy/postroenie_protsessa_bezopasnoy_razrabotki_po_v_organizatsii_/ /courses/avtorizovannye_kursy/ISB100promo/
+    Redirect 301 /courses/avtorizovannye_kursy/osnovy_installyatsii_nastroyki_i_upravleniya_mezhsetevym_ekranom_palo_alto_versii_9_0/ /courses/avtorizovannye_kursy/PAN210/
+    Redirect 301 /courses/avtorizovannye_kursy/panorama_9_0_masshtabirovanie_upravleniya_mezhsetevymi_ekranami/ /courses/avtorizovannye_kursy/PAN220/
+    Redirect 301 /courses/avtorizovannye_kursy/firewall_9_0_optimizatsiya_mezhsetevogo_ekrana_dlya_profilaktiki_ugroz/ /courses/avtorizovannye_kursy/PAN214/
+    Redirect 301 /courses/avtorizovannye_kursy/bezopasnaya_razrabotka_pod_os_avrora_sailfish_os/ /courses/avtorizovannye_kursy/ISSF020/
+    Redirect 301 /courses/avtorizovannye_kursy/administrirovanie_apksh_kontinent_versii_3_9/ /courses/avtorizovannye_kursy/KO005/
+    Redirect 301 /courses/avtorizovannye_kursy/organizatsiya_yuridicheski_znachimogo_edo_v_organizatsii_i_problemy_zakonodatelnoy_bazy_i_ee_primeni/ /courses/avtorizovannye_kursy/KP000promo/
+    Redirect 301 /courses/avtorizovannye_kursy/otchety_intsidenty_ikh_analiz_i_poryadok_reagirovaniya_v_secret_net_studio/ /courses/avtorizovannye_kursy/SN004/
+    Redirect 301 /courses/avtorizovannye_kursy/vebinar_reagirovanie_na_intsidenty_informatsionnoy_bezopasnosti_na_promyshlennykh_predpriyatiyakh/ /courses/avtorizovannye_kursy/KL01promo/
+    Redirect 301 /courses/avtorizovannye_kursy/vebinar_pentest_asu_v_laboratornykh_usloviyakh_analiz_neochevidnykh_osobennostey_tekhnologicheskogo_/ /courses/avtorizovannye_kursy/KL02promo/
+    Redirect 301 /courses/avtorizovannye_kursy/vebinar_effektivnaya_zashchita_ot_utechek_dannykh_s_pomoshchyu_devicelock_dlp/ /courses/avtorizovannye_kursy/promoIS054/
+
+    Redirect 301 /courses/avtorizovannye_kursy/vebinar_obzor_vozmozhnostey_sns_chto_mozhet_i_chto_ne_mozhet_secret_net_studio_/ /courses/avtorizovannye_kursy/SN003promo/
+    Redirect 301 /courses/avtorizovannye_kursy/polnomochnyy_i_diskretsionnyy_dostup_sns_kak_i_v_kakikh_sluchayakh_primenyat/ /courses/avtorizovannye_kursy/SN001promo/
+    Redirect 301 /courses/avtorizovannye_kursy/administrirovanie_apksh_kontinent_versii_3_9_dopolnitelnye_nastroyki/ /courses/avtorizovannye_kursy/KO005-1/
+    Redirect 301 /courses/avtorizovannye_kursy/obespechenie_informatsionnoy_bezopasnosti_s_ispolzovaniem_shifrovalnykh_kriptograficheskikh_sredstv/ /courses/avtorizovannye_kursy/IS018promo/
+    Redirect 301 /courses/avtorizovannye_kursy/promo_vebinar_operatorskoe_mesto_v_pak_kriptopro_uts_upravlenie_klyuchevymi_dannymi_polzovateley/ /courses/avtorizovannye_kursy/KP020promo/
+    Redirect 301 /courses/avtorizovannye_kursy/promo_vebinar_razvyertyvanie_uts_primenenie_skzi_i_ep_na_baze_pak_kriptopro_uts/ /courses/avtorizovannye_kursy/KP010promo/
+    Redirect 301 /courses/avtorizovannye_kursy/vnedrenie_administrirovanie_i_rabota_s_platformoy_tsentralizovannogo_upravleniya_mobilnymi_ustroystv/ /courses/avtorizovannye_kursy/ISSF030/
+    Redirect 301 /courses/avtorizovannye_kursy/primenenie_programmno_apparatnogo_kompleksa_sobol/ /courses/avtorizovannye_kursy/SO001/
+    Redirect 301 /courses/avtorizovannye_kursy/zashchita_udalennogo_dostupa_s_pomoshchyu_kontinent_tls/ /courses/avtorizovannye_kursy/KO006/
+    Redirect 301 /courses/avtorizovannye_kursy/tsifrovaya_kriminalistika_issledovanie_mobilnykh_ustroystv_oblachnykh_servisov_personalnykh_kompyute/ /courses/avtorizovannye_kursy/IS083/
+    Redirect 301 /courses/avtorizovannye_kursy/RuSIEM_exp/ /courses/avtorizovannye_kursy/IS085/
+    Redirect 301 /courses/avtorizovannye_kursy/vnedrenie_i_razvertyvanie_sistemy_monitoringa_sbora_i_analiza_sobytiy_rusiem/ /courses/avtorizovannye_kursy/IS086/
+    Redirect 301 /courses/avtorizovannye_kursy/administrirovanie_kontinent_4/ /courses/avtorizovannye_kursy/KO007/
+    Redirect 301 /courses/avtorskie_kursy/kompleksnoe_obespechenie_informatsionnoy_bezopasnosti_v_organizatsii/ /courses/avtorskie_kursy/IS002/
+    Redirect 301 /courses/avtorskie_kursy/primenenie_infrastruktury_otkrytykh_klyuchey/ /courses/avtorskie_kursy/IS003/
+
+    Redirect 301 /courses/avtorskie_kursy/obespechenie_bezopasnosti_informatsionnykh_i_setevykh_resursov/ /courses/avtorskie_kursy/IS005/
+    Redirect 301 /courses/avtorskie_kursy/audit_informatsionnoy_bezopasnosti_metodiki_i_prakticheskoe_primenenie/ /courses/avtorskie_kursy/IS006/
+    Redirect 301 /courses/avtorskie_kursy/zashchita_besprovodnykh_setey/ /courses/avtorskie_kursy/IS016/
+    Redirect 301 /courses/avtorskie_kursy/upravlenie_riskami_informatsionnoy_bezopasnosti_sovremennoy_organizatsii_metodiki_i_prakticheskie_as/ /courses/avtorskie_kursy/IS017/
+    Redirect 301 /courses/avtorskie_kursy/pravonarusheniya_v_sfere_kompyuternoy_informatsii_i_ikh_rassledovanie_prakticheskie_aspekty/ /courses/avtorskie_kursy/IS040/
+    Redirect 301 /courses/avtorskie_kursy/upravlenie_intsidentami_informatsionnoy_bezopasnosti_prakticheskie_aspekty/ /courses/avtorskie_kursy/IS049/
+    Redirect 301 /courses/avtorskie_kursy/dlp_sistemy/ /courses/avtorskie_kursy/IS053/
+    Redirect 301 /courses/avtorskie_kursy/organizatsiya_i_vedenie_konfidentsialnogo_dokumentooborota_vklyuchaya_elektronnyy_dokumentooborot/ /courses/avtorskie_kursy/IS058/
+    Redirect 301 /courses/avtorskie_kursy/obespechenie_bezopasnosti_oblachnykh_vychisleniy/ /courses/avtorskie_kursy/IS059/
+    Redirect 301 /courses/avtorskie_kursy/attestatsiya_obektov_informatizatsii_po_trebovaniyam_bezopasnosti_informatsii/ /courses/avtorskie_kursy/IS068/
+    Redirect 301 /courses/avtorskie_kursy/kompyuternaya_kriminalistika/ /courses/avtorskie_kursy/IS070/
+    Redirect 301 /courses/avtorskie_kursy/obespechenie_bezopasnosti_i_antiterroristicheskoy_zashchishchennosti_obektov_toplivno_energetichesko/ /courses/avtorskie_kursy/IS072/
+    Redirect 301 /courses/avtorskie_kursy/informatsionnaya_bezopasnost_kriticheskoy_informatsionnoy_infrastruktury_korporativnye_tsentry_monit/ /courses/avtorskie_kursy/IS076/
+    Redirect 301 /courses/avtorskie_kursy/audit_bezopasnosti_chast_1/ /courses/avtorskie_kursy/ISA020/
+    Redirect 301 /courses/avtorskie_kursy/kompleksnaya_zashchita_obektov_tek_ot_terroristicheskikh_ugroz/ /courses/avtorskie_kursy/ISD014/
+    Redirect 301 /courses/avtorskie_kursy/audit_bezopasnosti_i_testirovanie_na_proniknovenie/ /courses/avtorskie_kursy/ISH010/
+
+    Redirect 301 /courses/avtorskie_kursy/zashchita_ot_khakerskikh_atak_i_vzlomov/ /courses/avtorskie_kursy/IS011/
+    Redirect 301 /courses/avtorskie_kursy/382_p_audit_i_vnedrenie11/ /courses/avtorskie_kursy/ISNPS011/
+    Redirect 301 /courses/avtorskie_kursy/prakticheskie_aspekty_zashchity_asu_tp_i_promyshlennykh_setey/ /courses/avtorskie_kursy/IS065/
+    Redirect 301 /courses/avtorskie_kursy/testirovanie_na_proniknovenie_asu_tp_dlya_professionalov/ /courses/avtorskie_kursy/KL011/
+    Redirect 301 /courses/avtorskie_kursy/tsifrovoy_kriminalisticheskiy_analiz_v_asu_tp_dlya_professionalov/ /courses/avtorskie_kursy/KL012/
+    Redirect 301 /courses/avtorskie_kursy/predotvrashchenie_moshennichestva_i_rassledovanie_intsidentov_pri_distantsionnom_bankovskom_obsluzhi/ /courses/avtorskie_kursy/IS061/
+    Redirect 301 /courses/avtorskie_kursy/sposoby_i_sredstva_tekhnicheskoy_zashchity_informatsii/ /courses/avtorskie_kursy/IS069/
+    Redirect 301 /courses/avtorskie_kursy/antifrod_prakticheskie_aspekty_postroeniya_sistemy_zashchity/ /courses/avtorskie_kursy/ISAF05/
+    Redirect 301 /courses/avtorskie_kursy/osnovy_bezopasnosti_sap/ /courses/avtorskie_kursy/SAP010/
+    Redirect 301 /courses/avtorskie_kursy/bezopasnost_i_antiterroristicheskaya_zashchishchyennost_obektov_toplivno_energeticheskogo_kompleksa_/ /courses/avtorskie_kursy/IS072-promo/
+    Redirect 301 /courses/avtorskie_kursy/sozdanie_bezopasnykh_asu_tp_na_baze_tekhnologiy_fizpribor/ /courses/avtorskie_kursy/IS066/
+    Redirect 301 /courses/avtorskie_kursy/dokumenty_fsb_rossii_v_chasti_organizatsii_vzaimodeystviya_s_gossopka_osnovnye_voprosy_i_pravoprimen/ /courses/avtorskie_kursy/IS076promo/
+    Redirect 301 /courses/avtorskie_kursy/vebinar_sozdanie_bezopasnykh_asu_tp_na_baze_tekhnologiy_fizpribor/ /courses/avtorskie_kursy/promo-IS066/
+    Redirect 301 /courses/avtorskie_kursy/vebinar_tsentralizatsiya_upravleniya_informatsionnoy_bezopasnostyu_kriticheskikh_informatsionnykh_si/ /courses/avtorskie_kursy/IS076-1promo/
+    Redirect 301 /courses/avtorskie_kursy/seminar_osobennosti_obrabotki_i_obespecheniya_bezopasnosti_personalnykh_dannykh_v_meditsinskikh_orga/ /courses/avtorskie_kursy/ISOMED001/
+    Redirect 301 /courses/avtorskie_kursy/konsol_administratora_tsr_osobennosti_raboty_operatora_kriptopro_uts/ /courses/avtorskie_kursy/SN004prom/
+
+    Redirect 301 /courses/avtorskie_kursy/obespecheniya_bezopasnosti_personalnykh_dannykh_v_meditsinskikh_organizatsiyakh/ /courses/avtorskie_kursy/IS080/
+    Redirect 301 /courses/avtorskie_kursy/rassmotrenie_mekhanizmov_i_spetsifiki_primeneniya_generalnogo_reglamenta_es_o_zashchite_dannykh_gene/ /courses/avtorskie_kursy/IS020/
+    Redirect 301 /courses/avtorskie_kursy/rassmotrenie_itogov_pravoprimenitelnoy_i_sudebnoy_praktiki_gdprv_2018_2019_godakh/ /courses/avtorskie_kursy/IS020promo/
+    Redirect 301 /courses/avtorskie_kursy/bezopasnaya_razrabotka_programmnogo_obespecheniya/ /courses/avtorskie_kursy/ISSF020-1/
+    Redirect 301 /courses/avtorskie_kursy/povyshenie_osvedomlennosti_po_informatsionnoy_bezopasnosti/ /courses/avtorskie_kursy/IS078/
+    Redirect 301 /courses/avtorskie_kursy/prakticheskie_aspekty_sozdaniya_strukturnogo_podrazdeleniya_upravleniya_sluzhby_otdela_zashchity_inf/ /courses/avtorskie_kursy/IS017promo/
+    Redirect 301 /courses/avtorskie_kursy/dss_svs_primenenie_oblachnykh_klyuchey_podpisi_i_eye_proverki/ /courses/avtorskie_kursy/SN002promo/
+    Redirect 301 /courses/avtorskie_kursy/kriptopro_ngate_kriptoshlyuz_dlya_udalyennoy_publikatsii/ /courses/avtorskie_kursy/VG001promo/
+    Redirect 301 /courses/avtorskie_kursy/zashchita_personalnykh_dannykh_pri_narushenii_grazhdanskikh_prav/ /courses/avtorskie_kursy/IS021/
+    Redirect 301 /courses/avtorskie_kursy/kriptopro_ngate_shlyuz_s_zashchitoy_kanala/ /courses/avtorskie_kursy/KP070/
+    Redirect 301 /courses/avtorskie_kursy/analiz_pravoprimenitelnoy_praktiki_organizatsii_i_provedeniya_goskontrolya_i_realizatsii_norm_koap_r/ /courses/avtorskie_kursy/IS019(3)promo/
+    Redirect 301 /courses/avtorskie_kursy/elektronnaya_podpis_zhizn_v_epokhu_peremen/ /courses/avtorskie_kursy/KP040promo/
+    Redirect 301 /courses/avtorskie_kursy/vebinar_otsenka_i_monitoring_sotsialno_psikhologicheskogo_klimata_kompanii/ /courses/avtorskie_kursy/1785/
+    Redirect 301 /courses/avtorskie_kursy/otsenka_i_monitoring_sotsialno_psikhologicheskogo_klimata_kompanii/ /courses/avtorskie_kursy/IS082/
+    Redirect 301 /courses/avtorskie_kursy/nastroyka_podsistemy_bezopasnosti_astralinux_sovmestno_s_kriptopro_csp_dlya_vypolneniya_trebovaniy_p/ /courses/avtorskie_kursy/KP080/
+    Redirect 301 /courses/avtorskie_kursy/IS019_4_promo/ /courses/avtorskie_kursy/IS019(4)promo/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/obespechenie_informatsionnoy_bezopasnosti_s_ispolzovaniem_shifrovalnykh_kriptograficheskikh_sredstv_/ /courses/kursy_soglasovannye_s_federalnymi_organami/IS018/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/obespechenie_bezopasnosti_personalnykh_dannykh_pri_ikh_obrabotke_v_informatsionnykh_sistemax_persona/ /courses/kursy_soglasovannye_s_federalnymi_organami/IS019/
+
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/tekhnicheskaya_zashchita_informatsii_v_avtomatizirovannykh_sistemakh_upravleniya_proizvodstvennymi_i/ /courses/kursy_soglasovannye_s_federalnymi_organami/IS071/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/tekhnicheskaya_zashchita_informatsii_organizatsiya_zashchity_informatsii_ogranichennogo_dostupa_ne_s/ /courses/kursy_soglasovannye_s_federalnymi_organami/ISF080/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/informatsionnaya_bezopasnost_v_obeme_106_chasov_/ /courses/kursy_soglasovannye_s_federalnymi_organami/ISF106/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/tekhnicheskaya_zashchita_informatsii_sposoby_i_sredstva_zashchity_informatsii_ogranichennogo_dostupa/ /courses/kursy_soglasovannye_s_federalnymi_organami/ISF216/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/programma_professionalnoy_perepodgotovki_informatsionnaya_bezopasnost_tekhnicheskaya_zashchita_konfi/ /courses/kursy_soglasovannye_s_federalnymi_organami/ISF504/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/programma_professionalnoy_perepodgotovki_informatsionnaya_bezopasnost_programma_soglasovana_fsb_ross/ /courses/kursy_soglasovannye_s_federalnymi_organami/ISF512/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/personalnye_dannye_ikh_obrabotka_identifikatsiya_trebovaniya_k_zashchite_personalnykh_dannykh/ /courses/kursy_soglasovannye_s_federalnymi_organami/IS019(1)promo/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/pogovorim_o_normativno_pravovykh_aktakh_i_deystviyakh_bezdeystviyakh_operatora_sotrudnika_za_kakie_d/ /courses/kursy_soglasovannye_s_federalnymi_organami/IS019(2)promo/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/programma_povysheniya_kvalifikatsii_spetsialistov_rabotayushchikh_v_oblasti_obespecheniya_bezopasnos/ /courses/kursy_soglasovannye_s_federalnymi_organami/IS077/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/bezopasnost_obektov_kriticheskoy_informatsionnoy_infrastruktury_novye_trebovaniya_prakticheskie_vopr/ /courses/kursy_soglasovannye_s_federalnymi_organami/IS077Promo/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/otdel_ib_sozdan_a_chto_delat_dalshe/ /courses/kursy_soglasovannye_s_federalnymi_organami/ISF512promo/
+    Redirect 301 /courses/kursy_soglasovannye_s_federalnymi_organami/izmeneniya_v_zakonodatelstve_rf_o_personalnykh_dannykh_itogi_raboty_roskomnadzora_za_2020_god/ /courses/kursy_soglasovannye_s_federalnymi_organami/IS001promo/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/vnedrenie_i_otsenka_sootvetstviya_standartu_pci_dss/ /courses/informatsionnaya_bezopasnost_bankov/IS052/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/antifrod_i_zashchita_bankovskikh_sistem_arsenal_zloumyshlennikov_i_ispolzuemye_imi_uyazvimosti/ /courses/informatsionnaya_bezopasnost_bankov/ISAF01/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/antifrod_i_zashchita_bankovskikh_sistem_postroenie_mnogourovnevoy_zashchity_zashchita_ot_atak/ /courses/informatsionnaya_bezopasnost_bankov/ISAF02/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/antifrod_i_zashchita_bankovskikh_sistem_zashchishchennoe_programmirovanie/ /courses/informatsionnaya_bezopasnost_bankov/ISAF04/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/vvedenie_vnedrenie_i_otsenka_sootvetstviya_finansovykh_organizatsiy_gost_r_57580_bezopasnost_finanso/ /courses/informatsionnaya_bezopasnost_bankov/ISST01/
+
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/antifrod_i_zashchita_bankovskikh_sistem_provedenie_rassledovaniy_intsidentov_i_sbor_dokazatelstv_dlya/ /courses/informatsionnaya_bezopasnost_bankov/ISAF03/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/antifrod_kompleksnoe_protivodeystvie_moshennichestvu_personala/ /courses/informatsionnaya_bezopasnost_bankov/IS073/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/spetsialist_po_platezhnym_sistemam/ /courses/informatsionnaya_bezopasnost_bankov/ISNPS041/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/tekhnologiya_raboty_s_plastikovymi_kartami_i_zashchita_informatsii/ /courses/informatsionnaya_bezopasnost_bankov/ISP010/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/rassledovanie_prestupleniy_v_sfere_oborota_kriptovalyuty_i_bankovskikh_kart/ /courses/informatsionnaya_bezopasnost_bankov/ISA010/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/spetsialist_po_platezhnym_sistemam_podgotovka_po_profstandartu/ /courses/informatsionnaya_bezopasnost_bankov/ISNPS041_promo/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/684_p_vypolnenie_trebovaniy_dlya_nekreditnykh_finansovykh_organizatsiy/ /courses/informatsionnaya_bezopasnost_bankov/ISNPS012/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/gost_r_57580_kak_obespechit_sootvetstvie_trebovaniyam/ /courses/informatsionnaya_bezopasnost_bankov/ISST01-promo/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/minimizatsiya_regulyatornogo_riska_dokumentalnogo_obespecheniya_zhiznennogo_tsikla_avtomatizirovanny/ /courses/informatsionnaya_bezopasnost_bankov/ISST01PROMO/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/obshchee_predstavlenie_o_tekhnologiyakh_v_kartochnykh_platezhnykh_sistemakh_i_obespechenie_bezopasno/ /courses/informatsionnaya_bezopasnost_bankov/ISNPS041(2)promo/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/courses_praktika_i_tekhnologii_predotvrashcheniya_moshennichestva_v_tsifrovykh_kanalakh_obsluzhivaniya_klien/ /courses/informatsionnaya_bezopasnost_bankov/IS081/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/vvedenie_vnedrenie_i_otsenka_sootvetstviya_gost_r_57580_1_2017_bezopasnost_finansovykh_bankovskikh_o/ /courses/informatsionnaya_bezopasnost_bankov/ISST01-2promo/
+    Redirect 301 /courses/informatsionnaya_bezopasnost_bankov/vvedenie_vnedrenie_i_otsenka_sootvetstviya_gost_r_57580_1_2017_bezopasnost_finansovykh_bankovskikh_o/ /courses/informatsionnaya_bezopasnost_bankov/ISST01-2promo/
+    Redirect 301 /courses/infrastruktura_tsod/ekspluatatsiya_tsod/ /courses/infrastruktura_tsod/COD002/
+    Redirect 301 /courses/infrastruktura_tsod/monitoring_tsod/ /courses/infrastruktura_tsod/COD003/
+
+    Redirect 301 /courses/infrastruktura_tsod/arkhitektura_tsod/ /courses/infrastruktura_tsod/COD004/
+    Redirect 301 /courses/infrastruktura_tsod/inzhenernaya_infrastruktura_tsod/ /courses/infrastruktura_tsod/COD006/
+    Redirect 301 /courses/infrastruktura_tsod/trebovaniya_i_rekomendatsii_standarta_tia_942/ /courses/infrastruktura_tsod/COD005/
+    Redirect 301 /courses/infrastruktura_tsod/fizicheskaya_bezopasnost_v_tsod/ /courses/infrastruktura_tsod/COD001/
+    Redirect 301 /courses/os_rosa_kobalt/sertifitsirovannyy_administrator_os_rosa_kobalt/ /courses/os_rosa_kobalt/LR002/
+    Redirect 301 /courses/os_rosa_kobalt/sertifitsirovannyy_polzovatel_os_rosa_kobalt/ /courses/os_rosa_kobalt/LR001/
+    Redirect 301 /courses/os_rosa_kobalt/kompleksnyy_kurs_sistemnyy_administrator_rosa_linux/ /courses/os_rosa_kobalt/LR003/
+    Redirect 301 /courses/microsoft/podderzhka_i_ustranenie_nepoladok_windows_10_/ /courses/microsoft/WIN001/
+    Redirect 301 /courses/microsoft/administrirovanie_windows_server_2012/ /courses/microsoft/WINS012/
+    Redirect 301 /courses/avtorskie_unikalnye/blokcheyn_i_oblachnye_tekhnologii_dlya_organizatsii/ /courses/avtorskie_unikalnye/DO005/
+    Redirect 301 /courses/avtorskie_unikalnye/metodiki_i_prakticheskoe_primenenie_tekhnologiy_informatsionnoy_bezopasnosti_v_ramkakh_protsessa_dev/ /courses/avtorskie_unikalnye/DO001/
+    Redirect 301 /courses/avtorskie_unikalnye/osobennosti_podbora_it_spetsialistov/ /courses/avtorskie_unikalnye/IT001/
+    Redirect 301 /courses/avtorskie_unikalnye/primenenie_tekhnologiy_neyronnykh_setey_i_iskusstvennogo_intellekta_pri_rabote_s_big_data_uyazvimost/ /courses/avtorskie_unikalnye/DO004/
+    Redirect 301 /courses/avtorskie_unikalnye/mashinnoe_obuchenie_big_data/ /courses/avtorskie_unikalnye/DO003/
+    Redirect 301 /courses/avtorskie_unikalnye/osnovy_mashinnogo_obucheniya_i_neyronnykh_setey/ /courses/avtorskie_unikalnye/DO002/
+    Redirect 301 /courses/avtorskie_unikalnye/pogruzhenie_v_web_analitiku./ /courses/avtorskie_unikalnye/WEB01/
+    Redirect 301 /courses/avtorskie_unikalnye/pravovaya_okhrana_rezultatov_intellektualnoy_deyatelnosti_dlya_it_kompaniy/ /courses/avtorskie_unikalnye/ITID001/
+    Redirect 301 /courses/avtorskie_unikalnye/trekhmernoe_modelirovanie_detaley_i_sborochnykh_edinits_v_sisteme_kompas_3d/ /courses/avtorskie_unikalnye/m2/
+    Redirect 301 /courses/avtorskie_unikalnye/bezopasnye_devops_praktiki/ /courses/avtorskie_unikalnye/DO001promo/
+    Redirect 301 /courses/avtorskie_unikalnye/zashchita_intellektualnoy_sobstvennosti_razrabotchikov_it_produktov/ /courses/avtorskie_unikalnye/ITID001promo/
+    Redirect 301 /courses/avtorskie_unikalnye/razrabotka_klientskikh_veb_prilozheniy_s_angular/ /courses/avtorskie_unikalnye/WEB02/
+    Redirect 301 /courses/avtorskie_unikalnye/razrabotka_klientskikh_veb_prilozheniy_s_react/ /courses/avtorskie_unikalnye/WEB04/
+    Redirect 301 /courses/avtorskie_unikalnye/razrabotka_klientskikh_veb_prilozheniy_s_vue_js/ /courses/avtorskie_unikalnye/WEB03/
+
+    Redirect 301 /courses/avtorskie_unikalnye/yazyk_python_osnovy/ /courses/avtorskie_unikalnye/PH001/
+    Redirect 301 /courses/avtorskie_unikalnye/osnovy_administrirovaniya_servera_bazy_dannykh_postgresql_i_osnovy_razvertyvaniya_i_ispolzovaniya_pr/ /courses/avtorskie_unikalnye/PS001/
+    Redirect 301 /courses/avtorskie_unikalnye/yazyk_python_v_tekhnologiyakh_klient_server_i_raspredelennykh_vychisleniyakh/ /courses/avtorskie_unikalnye/PH002/
+    Redirect 301 /courses/avtorskie_unikalnye/yazyk_python_dlya_biznes_analitikov_postroenie_otchetov_i_vizualizatsiya_dannykh_dlya_ofisnykh_prilo/ /courses/avtorskie_unikalnye/PH003/
+    Redirect 301 /courses/avtorskie_unikalnye/ispolzovanie_apparmor_dlya_zashchity_prilozheniy/ /courses/avtorskie_unikalnye/ALSE-1607promo/
+    Redirect 301 /courses/avtorskie_unikalnye/nastroyka_vpn_soedineniya_sredstvami_openvpn/ /courses/avtorskie_unikalnye/ALSE-1606promo/
+    Redirect 301 /courses/avtorskie_unikalnye/razrabotka_setevykh_demonov_v_linux/ /courses/avtorskie_unikalnye/ALSE-1608promo/
+    Redirect 301 /courses/avtorskie_unikalnye/razrabotka_drayvera_blochnogo_ustroystva/ /courses/avtorskie_unikalnye/ALSE-1609promo/
+    Redirect 301 /courses/avtorskie_unikalnye/nastroyka_mezhsetevogo_ekrana_na_osnove_mikrotik/ /courses/avtorskie_unikalnye/IT002promo/
+    Redirect 301 /courses/avtorskie_unikalnye/osnovy_administrirovaniya_linux/ /courses/avtorskie_unikalnye/ALSE-1607/
+    Redirect 301 /courses/avtorskie_unikalnye/programmirovanie_v_linux_na_cc_/ /courses/avtorskie_unikalnye/ALSE-1608/
+    Redirect 301 /courses/avtorskie_unikalnye/razrabotka_drayverov_pod_linux_i_android/ /courses/avtorskie_unikalnye/ALSE-1609/
+    Redirect 301 /courses/avtorskie_unikalnye/setevye_servisy_v_linux/ /courses/avtorskie_unikalnye/ALSE-1606/
+    Redirect 301 /courses/avtorskie_unikalnye/sovmestnoe_ispolzovanie_oborudovaniya_mikrotik_i_cisco/ /courses/avtorskie_unikalnye/IT002/
+    Redirect 301 /courses/avtorskie_unikalnye/upravlenie_komandoy_testirovshchikov/ /courses/avtorskie_unikalnye/IT003/
+    Redirect 301 /courses/avtorskie_unikalnye/java_ecma_script_ili_java_script_vvedenie_v_yazyk_razrabotki_klientskogo_prilozheniya_kakuyu_sredu_r/ /courses/avtorskie_unikalnye/Jv004Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/java_ideologiya_postroenie_prilozheniy_masshtaba_predpriyatiya_chto_bylo_i_chto_stalo/ /courses/avtorskie_unikalnye/Jv003Promo/
+
+    Redirect 301 /courses/avtorskie_unikalnye/python_kollektsii_slovari_kortezhi/ /courses/avtorskie_unikalnye/Pt002Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/java_servera_prilozheniy_ot_platnykh_do_besplatnykh/ /courses/avtorskie_unikalnye/Jv002Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/web_razrabotka_chto_bylo_i_chto_budet_s_web_razrabotkoy_ekosistema_razrabotki/ /courses/avtorskie_unikalnye/Wb001Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/java_osnovy_yazyka_java_tipy_dannykh_oop_kak_razrabatyvat_jse_i_jee_prilozheniya/ /courses/avtorskie_unikalnye/Jv001Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/java_postroenie_servera_na_osnove_raspberry_i_kontrollera_wemos/ /courses/avtorskie_unikalnye/Jv007Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/python_oop_i_yazyk_python/ /courses/avtorskie_unikalnye/Pt004Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/java_rest_servisy_v_java_prilozheniyakh/ /courses/avtorskie_unikalnye/Jv006Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/web_razrabotka_tipy_dannykh_js_osnovy_oop_typescript/ /courses/avtorskie_unikalnye/Wb002Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/python_upravlenie_pamyatyu_v_pitone/ /courses/avtorskie_unikalnye/Pt003Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/java_tranzaktsionnye_mekhanizmy_v_jee_prilozheniyakh_puly_soedineniy_s_bazami_dannykh_fabriki_jms_so/ /courses/avtorskie_unikalnye/Jv005Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/python_osnovy_yazyka_osnovnye_konstruktsii_pesochnitsa_instalyatsiya_i_nastroyka_sredy_razrabotki/ /courses/avtorskie_unikalnye/Pt001Promo/
+    Redirect 301 /courses/avtorskie_unikalnye/razrabotka_web_prilozheniy_ispolzovanie_javascript_typescript_biblioteki_jquery_nodejs_angular/ /courses/avtorskie_unikalnye/IT009/
+    Redirect 301 /courses/avtorskie_unikalnye/razrabotka_korporativnykh_java_ee_prilozheniy_dlya_standartnykh_serverov_prilozheniy/ /courses/avtorskie_unikalnye/IT007/
+    Redirect 301 /courses/avtorskie_unikalnye/relyatsionnaya_baza_dannykh_osnovy_sql_kurs_dlya_biznes_analitikov/ /courses/avtorskie_unikalnye/IT008/
+    Redirect 301 /courses/avtorskie_unikalnye/ekspress_administrirovanie_servera_bazy_dannykh_oracle_19c/ /courses/avtorskie_unikalnye/IT019/
+    Redirect 301 /courses/avtorskie_unikalnye/razrabotka_web_prilozheniy_typescript_angular_/ /courses/avtorskie_unikalnye/IT016/
+    Redirect 301 /courses/avtorskie_unikalnye/professionalnoe_ispolzovanie_sql_i_pl_sql_v_oracle_11g_19s/ /courses/avtorskie_unikalnye/IT018/
+
+    Redirect 301 /courses/avtorskie_unikalnye/ot_javase_k_tekhnologiyam_srednego_zvena_orm_jpa_tranzaktsionnaya_model_ejb_mekhanizmy_upravleniya_s/ /courses/avtorskie_unikalnye/IT012/
+    Redirect 301 /courses/avtorskie_unikalnye/osnovy_raboty_s_bibliotekoy_reactjs/ /courses/avtorskie_unikalnye/IT006/
+    Redirect 301 /courses/avtorskie_unikalnye/novye_osobennosti_oracle_19c_dlya_razrabotchikov_sql_zaprosov_i_pl_sql_moduley/ /courses/avtorskie_unikalnye/IT015/
+    Redirect 301 /courses/avtorskie_unikalnye/nastroyka_korporativnykh_prilozheniy_i_sql_zaprosov_dlya_bazy_dannykh_oracle/ /courses/avtorskie_unikalnye/IT010/
+    Redirect 301 /courses/avtorskie_unikalnye/voprosy_administrirovaniya_servera_prilozheniy_oracle_weblogic/ /courses/avtorskie_unikalnye/IT013/
+    Redirect 301 /courses/avtorskie_unikalnye/xml_i_java/ /courses/avtorskie_unikalnye/IT011/
+    Redirect 301 /courses/avtorskie_unikalnye/jv_3_razrabotka_raspredelennykh_prilozheniy_s_ispolzovaniem_ejb_3/ /courses/avtorskie_unikalnye/IT020/
+    Redirect 301 /courses/avtorskie_unikalnye/jv_0_osnovy_yazyka_java_sreda_programirovaniya_intellijidea_jdeveloper_eclipse_/ /courses/avtorskie_unikalnye/IT014/
+    Redirect 301 /courses/avtorskie_unikalnye/jv_1_java_i_bazy_dannykh_postgresql_oracle_razrabotka_klient_servernykh_prilozheniy/ /courses/avtorskie_unikalnye/IT017/
+    Redirect 301 /courses/avtorskie_unikalnye/java_rasshirennye_temy_jse_12/ /courses/avtorskie_unikalnye/IT005/
+    Redirect 301 /courses/avtorskie_unikalnye/java_ee_6_razrabotka_web_servisov_s_pomoshchyu_jax_ws_jax_rs/ /courses/avtorskie_unikalnye/IT004/
+    Redirect 301 /courses/avtorskie_unikalnye/formalnye_yazyki_modelirovaniya_uml/ /courses/avtorskie_unikalnye/IT021/
+    Redirect 301 /courses/avtorskie_unikalnye/formalnye_yazyki_modelirovaniya_bpmn_dmn/ /courses/avtorskie_unikalnye/IT022/
+    Redirect 301 /courses/avtorskie_unikalnye/chto_eshchye_nuzhno_znat_o_diagrammakh_variantov_ispolzovaniya_dlya_100_ikh_effektivnosti/ /courses/avtorskie_unikalnye/IT021promo/
+    Redirect 301 /courses/avtorskie_unikalnye/kakie_elementy_korporativnoy_arkhitektury_poddayutsya_opisaniyu_na_yazyke_bpmn/ /courses/avtorskie_unikalnye/IT022promo/
+    Redirect 301 /courses/avtorskie_unikalnye/piton_i_rabota_s_relyatsionnymi_bazami_dannykh/ /courses/avtorskie_unikalnye/PH004promo/
+
+    Redirect 301 /courses/avtorskie_unikalnye/nodejs_i_servernoe_prilozhenie_exspress_server_pul_soedineniya_s_bazoy_dannykh_postavka_na_klientsko/ /courses/avtorskie_unikalnye/IT017promo/
+    Redirect 301 /courses/avtorskie_unikalnye/generatsiya_otchetov_v_standartnykh_formatakh_word_excel_pdf/ /courses/avtorskie_unikalnye/IT018promo/
+    Redirect 301 /courses/avtorskie_unikalnye/angular_i_react_chto_vybrat_funktsii_khuki_protiv_klassov_i_interfeysov_vam_s_shashechkami_ili_poekh/ /courses/avtorskie_unikalnye/IT019promo/
+    Redirect 301 /courses/avtorskie_unikalnye/piton_xml_json/ /courses/avtorskie_unikalnye/PH005promo/
+    Redirect 301 /courses/avtorskie_unikalnye/struktura_angular_prilozheniya_nachinaem_razrabotku_proekta_s_ispolzovaniem_nodejs_angular/ /courses/avtorskie_unikalnye/IT016promo/
+    Redirect 301 /courses/avtorskie_unikalnye/biblioteki_material_dlya_bystroy_razrabotki_klientskikh_prilozheniy/ /courses/avtorskie_unikalnye/IT014promo/
+    Redirect 301 /courses/avtorskie_unikalnye/installyatsiya_servera_na_platforme_oracle_linux_centos_linux/ /courses/avtorskie_unikalnye/PS001promo/
+    Redirect 301 /courses/avtorskie_unikalnye/mnogopotochnoe_i_mnogoprotsessornoe_programmirovanie_v_pitone/ /courses/avtorskie_unikalnye/PH006promo/
+    Redirect 301 /courses/avtorskie_unikalnye/piton_i_raspberry_na_primere_umnogo_doma/ /courses/avtorskie_unikalnye/PH007promo/
+    Redirect 301 /courses/avtorskie_unikalnye/osnovy_yazyka_sql_osnovnye_konstruktsii_kak_izuchat_sql/ /courses/avtorskie_unikalnye/PS002promo/
+    Redirect 301 /courses/avtorskie_unikalnye/sereznyy_podkhod_k_napisaniyu_sql_zaprosov_optimizatsiya_sql/ /courses/avtorskie_unikalnye/PS003promo/
+    Redirect 301 /courses/avtorskie_unikalnye/obekty_bazy_dannykh/ /courses/avtorskie_unikalnye/IT015promo/
+    Redirect 301 /courses/avtorskie_unikalnye/upravlenie_izmeneniyami_v_it_i_biznes_protsessakh_v_svyazi_s_realizatsiey_strategii_importozameshche/ /courses/avtorskie_unikalnye/1759/
+    Redirect 301 /courses/avtorskie_unikalnye/upravlenie_izmeneniyami_pri_tsifrovizatsii/ /courses/avtorskie_unikalnye/1759promo/
+    Redirect 301 /courses/avtorskie_unikalnye/web_i_razrabotka_sovremennykh_prilozheniy_tekhnologii_react_angular_nodejs_jakarta_enterprise_editio/ /courses/avtorskie_unikalnye/IT024/
+
+    Redirect 301 /courses/avtorskie_unikalnye/programmirovanie_na_yazyke_python_uroven_4_data_science_obrabotka_analiz_i_vizualizatsiya_dannykh_na/ /courses/avtorskie_unikalnye/PH007/
+    Redirect 301 /courses/avtorskie_unikalnye/Integratsiya_v_korporativnykh_sistemakh/ /courses/avtorskie_unikalnye/CB006/
+    Redirect 301 /courses/avtorskie_unikalnye/Java_Persistence_s_ispolzovaniem_Hibernate/ /courses/avtorskie_unikalnye/CB014/
+    Redirect 301 /courses/asterisk/asterisk_v_call_tsentre/ /courses/asterisk/AST002/
+    Redirect 301 /courses/asterisk/intensiv_kurs_po_asterisk/ /courses/asterisk/AST001/
+    Redirect 301 /courses/psikhologiya_upravleniya/psikhologicheskie_priemy_sbora_informatsii_i_tekhniki_ustanovleniya_operativnogo_kontakta/ /courses/psikhologiya_upravleniya/ES203/
+    Redirect 301 /courses/psikhologiya_upravleniya/protivodeystvie_sotsialnoy_inzhenerii/ /courses/psikhologiya_upravleniya/ES400/
+    Redirect 301 /courses/psikhologiya_upravleniya/peregovory_v_deyatelnosti_sotrudnikov_sluzhb_bezopasnosti_i_osobennosti_peregovorov_s_gosudarstvenny/ /courses/psikhologiya_upravleniya/ES300promo/
+    Redirect 301 /courses/psikhologiya_upravleniya/upravlenie_stressom_i_konfliktom_v_usloviyakh_ekonomicheskogo_krizisa/ /courses/psikhologiya_upravleniya/ES500promo/
+    Redirect 301 /courses/psikhologiya_upravleniya/psikhologiya_vzaimootnosheniy_rabotodatelya_i_rabotnika_v_krizisnykh_situatsiyakh/ /courses/psikhologiya_upravleniya/ES600/
+    Redirect 301 /courses/psikhologiya_upravleniya/psikhologicheskoe_soprovozhdenie_pri_uvolneniyakh_i_sokrashcheniyakh_kak_minimizirovat_riski_konflik/ /courses/psikhologiya_upravleniya/ES600promo/
+    Redirect 301 /courses/psikhologiya_upravleniya/upravlenie_konfliktom_i_stressom_v_korporativnoy_srede/ /courses/psikhologiya_upravleniya/ES500/
+    Redirect 301 /courses/besplatnye_vebinary/bezopasnye_kriptovalyuty_praktika_onlayn_rassledovaniy/ /courses/besplatnye_vebinary/IS084/
+    Redirect 301 /courses/bazalt_spo/administrirovanie_os_alt_chast_1/ /courses/bazalt_spo/ALTADM1/
+
+    Redirect 301 /courses/avtorskie_unikalnye/programmirovanie-na-yazyke-python-uroven-5-machine-learning-osnovy-mashinnogo-i-glubokogo-obucheniya/ /courses/avtorskie_unikalnye/PH008/
+</IfModule>
+
+<IfModule mod_dir.c>
+	DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresByType image/jpeg "access plus 3 day"
+	ExpiresByType image/gif "access plus 3 day"
+</IfModule>

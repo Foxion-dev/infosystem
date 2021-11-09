@@ -1,0 +1,32 @@
+$(document).ready(function(){
+	$('.coursers-carousel').owlCarousel({
+		loop:true,
+			margin:30,
+			nav:true,
+			autoplay:false,
+			smartSpeed:1000,
+			loop:false,
+			autoplayTimeout:10000,
+			navText : ["<i class='icon-caret-left'></i>","<i class='icon-caret-right'></i>"],
+			responsive:{
+			0:{
+				items:1
+			},
+			400:{
+				items:2
+			},
+			600:{
+				items:3
+			},
+			800:{
+				items:4
+			},
+			1000:{
+				items:4
+			},
+			1200:{
+				items:4
+			}
+		}
+	});
+})

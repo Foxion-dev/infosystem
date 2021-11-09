@@ -1,0 +1,16 @@
+.wrap_block{min-height:477px;position:relative;}
+.bx-logo{padding-top: 30px;}
+.bx-logo img{width:120px;height:120px;border-radius:100%;}
+.text-center{text-align: center;}
+.bx-name{padding:50px 20px 0px 20px;font-style: normal;font-weight: normal;font-size: 18px;line-height: 18px;color:#fff;}
+.bx-date{position: absolute;bottom: 50px;color:#fff;left: 0;right: 0;}
+.mini-border{border-top:1.5px solid white;width:50px; height:2px;margin: 0 auto;padding-bottom: 15px;}
+.bx-link{display:flex;justify-content:center;align-items:center;position:absolute;color:#fff;bottom:0;clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);width: 260px;height: 30px;}
+@media(max-width:992px){
+.bx-itemconf{padding-bottom:20px;}
+}
+@media (max-width: 767px){
+	.heading-wrapper h5 {
+		line-height: 29px!important;
+	}
+}

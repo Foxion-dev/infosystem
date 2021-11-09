@@ -1,0 +1,82 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Об Академии", 
+		"/academy/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Лицензии и сертификаты", 
+		"/academy/licenses/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"/academy/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Преподаватели", 
+		"/academy/experts/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнеры", 
+		"/academy/partners/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Клиенты", 
+		"/academy/customers/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Команда", 
+		"/academy/team/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"/academy/reviews/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Пресса о нас", 
+		"/academy/pressa/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сведения об образовательной организации", 
+		"/academy/information/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/about/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	    ['Вакансии','/about/vacancies/',[],[],''],
+);
+?>

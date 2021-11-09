@@ -1,0 +1,24 @@
+ul.map-level-0 a {
+	font-weight: bold;
+}
+
+ul.map-level-0 a.LEVEL_0 {
+	font-family: 'OpenSans-ExtraBold', Arial, Tahoma, Sans-Serif;
+	font-size: 24px; text-transform: uppercase;
+	display: block;
+	padding: 7px 0px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+li.LI_LEVEL_1{ display: inline-block; }
+li.LI_LEVEL_1:after{ font-size: 11px; content: ' / '; display: inline-block; margin-right: 7px; margin-left: 7px; color: #64be23; }
+
+ul.map-level-1 a, ul.map-level-2 a, ul.map-level-3 a {
+	font-weight: normal;
+}
+
+.map-columns td {
+	vertical-align: top;
+}
+

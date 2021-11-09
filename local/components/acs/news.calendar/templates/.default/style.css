@@ -1,0 +1,59 @@
+.user-calendar{ margin-bottom: 30px; }
+.user-calendar a{ color: #77b509; text-decoration: none; }
+.user-calendar a:hover, .user-calendar a:focus{ color: #8cd50b; text-decoration: underline; }
+/**/
+.NewsCalWeekend, .NewsCalToday, .NewsCalDefault, .NewsCalOtherMonth , .NewsCalHeader, .NewsCalMonthNav, .NewsCalDay, .NewsCalNews{
+	font-size:14px;
+	color:#000000;
+}
+.NewsCalToday, .NewsCalDefault, .NewsCalOtherMonth, .NewsCalWeekend, .NewsCalHeader {
+	padding-left:8px;
+}
+.NewsCalToday{
+	background-color:#dadded;
+}
+.NewsCalDefault{
+	background-color:#FFFFFF;
+}
+.NewsCalOtherMonth{
+	background-color:#F8F9EF;
+}
+.NewsCalWeekend{
+	background-color:#F6E5E1;
+}
+.NewsCalHeader{
+	background-color:#EFF1F9;
+	color:#365D91;
+}
+.NewsCalTable, .NewsCalTable tr, .NewsCalTable td{
+	border-collapse:collapse;
+	border:1px solid #e1e1e1;
+}
+.NewsCalMonthNav{
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+.NewsCalDay{
+	color:#000000;
+}
+.NewsCalDayOther{
+	color:#365D91;
+}
+.NewsCalNews{
+	color:#7488B9;
+	font-size:12px;
+	line-height: 16px;
+	padding-top: 10px;
+}
+/**/
+.news-calendar .nice-select{ height: auto; display: inline-block; float: none; line-height: normal; border-radius: 15px; padding-top: 6px; padding-bottom: 6px; }
+.news-calendar .nice-select .current{  }
+.NewsCalMonthNav a{ display: inline-block; padding-top: 6px; }
+.alert-success{ margin-top: 20px; border-radius: 2px !important; border: 2px solid #d6e9c6; }
+.alert-success i{ background-color: #3c763d; color: #fff; padding: 7px 7px; border-radius: 50%; margin-left: 7px; margin-right: 7px;  }
+
+@media screen and (max-width: 768px) {
+	.NewsCalHeader{ font-size: 11px; }
+	.NewsCalNews{ font-size: 11px; overflow: hidden; }
+	/*.NewsCalNews a{ display: none; }*/
+}

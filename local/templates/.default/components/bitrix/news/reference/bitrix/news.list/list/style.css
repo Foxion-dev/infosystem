@@ -1,0 +1,18 @@
+.catalog-section-list li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    font-family: 'OpenSans-Bold', Arial, Tahoma, Sans-Serif;
+    line-height: normal;
+}
+.catalog-section-list li i {
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    font-size: 18px;
+}
+
+.catalog-section-list li sub {
+    top: -0.30em;
+}

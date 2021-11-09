@@ -1,0 +1,45 @@
+.standards-list .standards-item{
+	border: 1px solid #dcdfdf;
+	border-radius: 5px;
+	margin-bottom: 16px;
+	background: #fff;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.standards-list .standards-item .standards-item-title{
+	font-family: 'OpenSans-Bold', Arial, Tahoma, Sans-Serif;
+	font-size: 14px;
+	background: #eff3f3;
+	padding: 15px 20px;
+	border-bottom: 1px solid #dcdfdf;
+}
+.standards-list .standards-item .standards-item-text{
+	line-height: 16px;
+	font-size: 12px;
+	font-family: 'OpenSans-ExtraBold', Arial, Tahoma, Sans-Serif;
+	text-transform: uppercase;
+	color: #000;
+	display: block;
+	padding: 20px 20px 20px 20px;
+}
+.standards-list .standards-item .standards-item-num{
+	line-height: 16px;
+	font-size: 12px;
+	font-family: 'OpenSans-ExtraBold', Arial, Tahoma, Sans-Serif;
+	text-transform: uppercase;
+	color: #000;
+	display: block;
+	padding: 20px 0px 20px 0px;
+	text-align: center;
+}
+.catalog-section-list li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    font-family: 'OpenSans-Bold', Arial, Tahoma, Sans-Serif;
+}
+.catalog-section-list li i {
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}

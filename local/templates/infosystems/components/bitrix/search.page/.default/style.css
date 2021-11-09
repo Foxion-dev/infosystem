@@ -1,0 +1,20 @@
+a.search-page-params {
+	border-bottom: 1px dashed #ced4da;
+	text-decoration: none;
+}
+div.search-page-params {
+	margin-top: 6px;
+}
+.search-panel.in-search {
+    margin: 0px 0px 20px 0px;
+}
+.search-page {
+    padding: 40px 0px 10px;
+}
+.search-item-rate { font-size: 11px; }
+.search-page small{ color: #777; }
+.search-page h4{ text-transform: uppercase; }
+.search-page form div.row div{ margin-bottom: 20px; }
+
+/**/
+div.hr-line{ height: 5px; border-bottom: 1px dashed #ced4da; }

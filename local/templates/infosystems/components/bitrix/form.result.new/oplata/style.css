@@ -1,0 +1,85 @@
+table.form-table
+{
+	width:100%;
+	background-color:white;
+	border-collapse:collapse;
+	font-size:100%;
+	font-weight:normal;
+	line-height:160%;
+}
+
+table.form-table th, table.form-table td
+{
+	border:1px solid #ADC3D5;
+	padding: 5px 5px;
+	vertical-align:top;
+}
+
+table.form-table th
+{
+	background-image:url(images/table_head.gif);
+	background-repeat:repeat-x;
+	text-align: left;
+	color:#25639A;
+}
+
+
+table.form-table td
+{
+	padding: 15px 5px;
+}
+
+.form-required 
+{
+	color: red;
+}
+
+.error-fld {
+	display: block;
+	float: left;
+	height: 13px;
+	width: 15px;
+	background-repeat: no-repeat;
+	background-image: url(images/icon_warn.gif);
+}
+
+.form-pay{
+	padding: 100px 0;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.form-pay .logo-main{
+	justify-content: center;
+}
+.form-pay .form-title{
+	text-align: center;
+}
+.forms.form-pay .btn{
+	margin: 0 auto;
+}
+.form-pay a, .form-pay a:visited{
+color:	#8cd50b;
+}
+.form-pay .privacy-text{
+	/* text-align: center; */
+	color: #333;
+	font-size: 13px;
+	line-height: 15px;
+	opacity: 1;
+
+}
+.form-pay .row .label{
+	opacity: 1;
+}
+.up-btn{
+	display: none !important;
+}
+@media screen and (max-width: 768px) {
+	.form-pay{
+		padding: 50px 15px;
+	}
+}
+/* .form-pay .privacy-text a{
+	display: block;
+	line-height: 20px;
+} */

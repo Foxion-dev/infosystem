@@ -1,0 +1,15 @@
+.about-price{position:relative;}
+.about-price div.tab {max-width: 100%;overflow-x: scroll;background: #fff;margin-top: 40px;color: #fff;}
+.about-price div.tab.first{margin-top:0px;}
+.about-price table thead tr.name{background: #efa61d;text-align: center;color: #222;font-weight: 800;text-transform: uppercase;}
+.about-price table thead tr td{padding: 6px; color: #222;text-align: center;font-weight: 600;}
+.about-price table th, td {border: 1px solid #999;}
+.about-price table{border-collapse: collapse;}
+.about-price .name-in{background: #8cd50b;color: #222;text-align: center;font-weight: 400;}
+.about-price table td{padding:8px;text-align: center;}
+.about-price table tr td span{display:block;color:#222;}
+.about-price table .td.item-in-val{text-align:center}
+.about-price td.item-in-val.NAME {width: 30%;}
+.about-price td.item-in-val.DOCUMENTS {width: 15%;}
+.about-price table td.item-in-val.DATE{text-align:left}
+.price-page {margin-bottom: 20px;}

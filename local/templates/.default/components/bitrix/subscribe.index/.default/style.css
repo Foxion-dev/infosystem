@@ -1,0 +1,23 @@
+.subscrForm{
+    background: #eff3f3;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.subscrForm .form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2c2827;
+    background-clip: padding-box;
+    border: 2px solid #fff !important;
+    background-color: #fff !important;
+    border-radius: 20px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: none;
+}
+.subscrForm .form-control:hover, .subscrForm .form-control:focus{
+    border-color: #8cd50b !important;
+}

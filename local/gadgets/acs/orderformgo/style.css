@@ -1,0 +1,18 @@
+div.comment_items .delete-comment
+{
+	position: absolute;
+	right: 10px;
+	display: block;
+	height: 19px;
+	width: 19px;
+	background: url('images/close-icon.png') no-repeat center center;
+	cursor: pointer;
+	top:-5px;
+}
+
+div.comment_items{ position: relative; }
+div.comment_items .comment_items_title{ padding:3px 0px 3px 7px; display: block; }
+div.comment_items .comment_items_body{ padding:5px 0px 5px 7px; font-weight: bold; }
+div.comment_items .comment_items_date{ padding-left: 7px; font-weight: bold; color: #ccc; margin-bottom: 5px; }
+div.comment_items div.lnClass{height: 1px; background-color: #ebebeb; font-size: 0; margin-bottom: 10px;}
+div.allUrl{ text-align: right; }

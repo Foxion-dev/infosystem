@@ -1,0 +1,13 @@
+.banner-slider-text .button.button--common.button--primary{    
+	background-color: #fff;
+    width: max-content;
+    color: #3f6104!important;
+    margin: 0 AUTO;
+    TEXT-ALIGN: center;
+}
+.banner-slider-text .button.button--common.button--primary:after{
+	display:none;
+} 
+.banner-slider-text .button.button--common.button--primary:before {
+    margin-right: 0px!important;
+}

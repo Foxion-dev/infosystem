@@ -1,0 +1,33 @@
+.bx-breadcrumb {
+	margin: 0px 0px;
+	margin-bottom: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 10px;
+}
+.bx-breadcrumb i {
+	color: #fff;
+	line-height: 13px;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.bx-breadcrumb .bx-breadcrumb-item {
+	margin-bottom: 10px;
+	white-space: nowrap;
+	line-height: 13px;
+	vertical-align: middle;
+	margin-right: 10px;
+	display: inline-block;
+}
+.bx-breadcrumb .bx-breadcrumb-item span {
+	font-family: "OpenSans-Semibold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+.bx-breadcrumb .bx-breadcrumb-item i{ font-size: 10px; font-style: normal; }
+.bx-breadcrumb .bx-breadcrumb-item a {border-bottom: none;}
+.bx-breadcrumb .bx-breadcrumb-item a:hover {}

@@ -1,0 +1,902 @@
+[33mcommit 4d2cce2525c334d396ce19eb025ae2b88c2f057b[m[33m ([m[1;36mHEAD -> [m[1;32mfoxdev[m[33m)[m
+Author: Foxdev <bodya.sazonov@mail.ru>
+Date:   Tue Nov 9 16:58:38 2021 +0300
+
+    first local commit
+
+[33mcommit 0dde3f9b253577b2ea57674e5c1589d275a6bff7[m
+Author: Foxdev <bodya.sazonov@mail.ru>
+Date:   Tue Nov 9 16:51:18 2021 +0300
+
+    first local commit
+
+[33mcommit d88717763ff189bbdea9df89fb0745d271b7492f[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Nov 9 13:00:10 2021 +0300
+
+    test
+
+[33mcommit bda982b0166912e12d079ae58264ab82dba50b9a[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: b4c399e 7229a23
+Author: Kloman <vd@westpower.ru>
+Date:   Mon Feb 3 07:43:47 2020 +0000
+
+    Merged in dev (pull request #53)
+    
+    Выравнивание в карточке курса
+
+[33mcommit 7229a231400152800d1a673eaf2057993e28ccb1[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: root <root@support27.fvds.ru>
+Date:   Mon Feb 3 10:42:35 2020 +0300
+
+    Выравнивание в карточке курса
+
+[33mcommit b4c399ef3459265cbd3af29550a416bce00c710c[m
+Merge: c3cf6a2 662e93c
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Dec 25 08:49:49 2019 +0000
+
+    Merged in dev (pull request #52)
+    
+    комментарий
+
+[33mcommit 662e93c2c5d991ba1d28efaba7f71da2de0dacd3[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Dec 25 11:49:10 2019 +0300
+
+    комментарий
+
+[33mcommit c3cf6a25237e2141eb220fdb285ba953859010e2[m
+Merge: 79217fe 1891e77
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Dec 13 07:50:21 2019 +0000
+
+    Merged in dev (pull request #51)
+    
+    Убрал закрывающий тег лишний в футере
+
+[33mcommit 1891e77e06a68ddbe843a318861c3d1e4eab67e2[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Dec 13 10:46:28 2019 +0300
+
+    Убрал закрывающий тег лишний в футере
+
+[33mcommit 79217fedcb97920f7c130114a69dddb69c822232[m
+Merge: 7f37796 b5bf484
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Dec 12 15:54:10 2019 +0000
+
+    Merged in dev (pull request #50)
+    
+    Правка в перечне курсов
+
+[33mcommit b5bf48417d1c5c7691605fe626c791e22e148cbb[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Dec 12 18:53:26 2019 +0300
+
+    Правка в перечне курсов
+
+[33mcommit 7f3779687b8482e84eaa4c7b9c5a17b096eac184[m
+Merge: 3b93edb aa72a7a
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Nov 28 07:39:45 2019 +0000
+
+    Merged in dev (pull request #49)
+    
+    Ссылка на скачивание файла перечня курсов
+
+[33mcommit aa72a7a73186d5663c141e3e93bf1736a512d21c[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Nov 28 10:38:52 2019 +0300
+
+    Ссылка на скачивание файла перечня курсов
+
+[33mcommit 3b93edb6692cb6a83ad6b47416fde6c8d67eb04e[m
+Merge: 1d527d8 56c8165
+Author: Kloman <vd@westpower.ru>
+Date:   Tue Nov 26 07:44:48 2019 +0000
+
+    Merged in dev (pull request #48)
+    
+    Dev
+
+[33mcommit 56c8165777181a7b84999ff4ccecfeb538b0e365[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Nov 26 10:43:33 2019 +0300
+
+    год в курсах
+
+[33mcommit 9be114984491602443baa2342165109b606dcd6c[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Nov 26 10:39:59 2019 +0300
+
+    Убрал г. после года
+
+[33mcommit 1d527d83c1b352f5bbe42ed93fe13e439140624f[m
+Merge: 4eaf045 c98cbdb
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Oct 30 15:53:10 2019 +0000
+
+    Merged in dev (pull request #47)
+    
+    Правки
+
+[33mcommit c98cbdbd1fea1268a6141caf7e509a256457313b[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Oct 30 18:49:30 2019 +0300
+
+    Правки
+
+[33mcommit 4eaf0453aed6c09506c3f0430848de41557cc783[m
+Merge: 150cf0b 709ee9a
+Author: Kloman <vd@westpower.ru>
+Date:   Mon Oct 28 14:24:09 2019 +0000
+
+    Merged in dev (pull request #46)
+    
+    Редирект в хидере с инфосистем на инфосистемС
+
+[33mcommit 709ee9ad47e1fe74fe11ad37bbee305a6bcfef12[m
+Author: root <root@support27.fvds.ru>
+Date:   Mon Oct 28 17:11:26 2019 +0300
+
+    Редирект в хидере с инфосистем на инфосистемС
+
+[33mcommit 150cf0b07107e9dd49765e23542a7ffaa4f90bae[m
+Merge: 0c93573 8ba18ad
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Oct 4 12:54:56 2019 +0000
+
+    Merged in dev (pull request #45)
+    
+    Ещё правки от 4.10
+
+[33mcommit 8ba18ad679770798672ab8a094c54f8a07b68f0d[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Oct 4 15:54:06 2019 +0300
+
+    Ещё правки от 4.10
+
+[33mcommit 0c93573190bcc64b4cd88cf0107b0cee49c1a0f7[m
+Merge: 588b10e 288d3f6
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Oct 4 09:44:08 2019 +0000
+
+    Merged in dev (pull request #44)
+    
+    правки от 04.10
+
+[33mcommit 288d3f6d3463237305292349173aefc05dbd6e05[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Oct 4 12:43:11 2019 +0300
+
+    правки от 04.10
+
+[33mcommit 588b10e33536f611faa01b4c5a55a8203126cce3[m
+Merge: e4724bf e4f8f72
+Author: Kloman <vd@westpower.ru>
+Date:   Tue Oct 1 09:14:04 2019 +0000
+
+    Merged in dev (pull request #43)
+    
+    картинка в новостях
+
+[33mcommit e4f8f72f6e266ad42a7b3abfd3a7a3d37d9812f0[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Oct 1 12:12:56 2019 +0300
+
+    картинка в новостях
+
+[33mcommit e4724bffdaa7a6db8e91cc6df52fc5a696459860[m
+Merge: 636efda 236e206
+Author: Kloman <vd@westpower.ru>
+Date:   Tue Oct 1 08:47:17 2019 +0000
+
+    Merged in dev (pull request #42)
+    
+    Правка контактов
+
+[33mcommit 236e206a6eda1e57820ffbf56137242ee7b62d1c[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Oct 1 11:46:14 2019 +0300
+
+    Правка контактов
+
+[33mcommit 636efdad844b151c9b6f8556a4c302c66267133f[m
+Merge: e049245 697aee3
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Sep 26 08:34:29 2019 +0000
+
+    Merged in dev (pull request #41)
+    
+    Кнопка в контактах
+
+[33mcommit 697aee35d20e643b82c9c302456bb3c9fece0a7d[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Sep 26 11:21:54 2019 +0300
+
+    Кнопка в контактах
+
+[33mcommit e049245434bedd142019215fc9bb300eae818796[m
+Merge: bfedf26 99c9b1b
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Sep 20 10:37:03 2019 +0000
+
+    Merged in dev (pull request #40)
+    
+    Отложил вызов капчи на 1 с
+
+[33mcommit 99c9b1b7873908d5ba86296583ad195de4b9342c[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Sep 20 13:36:27 2019 +0300
+
+    Отложил вызов капчи на 1 с
+
+[33mcommit bfedf2699089e7dae5af14670e787c2caaa8251a[m
+Merge: 277df7a 1ecf647
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Sep 20 09:32:32 2019 +0000
+
+    Merged in dev (pull request #39)
+    
+    Переподключил капчу в футер
+
+[33mcommit 1ecf647cf3e5b53e41b9421c67dcd13a8d568a87[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Sep 20 12:28:03 2019 +0300
+
+    Переподключил капчу в футер
+
+[33mcommit 277df7aafa7a124c412e8282c8d85e6ed8811256[m
+Merge: 23a00f3 39ecd98
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Sep 20 08:21:00 2019 +0000
+
+    Merged in dev (pull request #38)
+    
+    Поправил капчу
+
+[33mcommit 39ecd98895c2ce90ef99d8caf56a45bfa1c59f1e[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Sep 20 11:20:22 2019 +0300
+
+    Поправил капчу
+
+[33mcommit 23a00f3fa7cacbb2b7c29eeba25ed3bd08a4f31a[m
+Merge: d1024aa fe7ee14
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Sep 19 09:28:11 2019 +0000
+
+    Merged in dev (pull request #37)
+    
+    Поправил перечень курсов
+
+[33mcommit fe7ee14594dc77068d8f695ec377760f66859506[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Sep 19 12:27:30 2019 +0300
+
+    Поправил перечень курсов
+
+[33mcommit d1024aa6527176c7a0e6267178a09741546ea957[m
+Merge: f35bd7b f281140
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Sep 18 15:36:42 2019 +0000
+
+    Merged in dev (pull request #36)
+    
+    кнопка на баннерах главной страницы
+
+[33mcommit f2811402fb3cec93a9064e4e256cc6fadb1ed7f4[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Sep 18 18:35:38 2019 +0300
+
+    кнопка на баннерах главной страницы
+
+[33mcommit f35bd7b8f2926ac3a3eb4ab1f74b4a4a54805f6e[m
+Merge: 0275477 83c2546
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Aug 16 14:20:41 2019 +0000
+
+    Merged in dev (pull request #35)
+    
+    Изменение меню иконок на главной
+
+[33mcommit 83c25468576e1618b4df6e6c36b7b50109d5f9e0[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Aug 16 17:19:58 2019 +0300
+
+    Изменение меню иконок на главной
+
+[33mcommit 02754776b5ee16895fbff547c3f2a723f297f078[m
+Merge: 2aa1321 05e2d85
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Aug 15 15:08:39 2019 +0000
+
+    Merged in dev (pull request #34)
+    
+    Создани прайс курсов и компонет
+
+[33mcommit 05e2d85b6aa79ae6cf2dedf2315decb66e585aea[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Aug 15 18:07:13 2019 +0300
+
+    Создани прайс курсов и компонет
+
+[33mcommit 2aa13219209f227c12a0bf591131c111e4f397b9[m
+Merge: 75724ba 60137d6
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Aug 7 10:16:19 2019 +0000
+
+    Merged in dev (pull request #33)
+    
+    Исправления вывода отзывов в курсах, исправление заголовка страницы прайсов
+
+[33mcommit 60137d683d1c474296ffb2196470faef044342f9[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Aug 7 13:15:05 2019 +0300
+
+    Исправления вывода отзывов в курсах, исправление заголовка страницы прайсов
+
+[33mcommit 75724ba4a1b1cd977862d24736fefa16de20383a[m
+Merge: 6941230 7a4db6d
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Aug 2 09:33:49 2019 +0000
+
+    Merged in dev (pull request #32)
+    
+    Добавление прайса в меню и страницы с прайсом
+
+[33mcommit 7a4db6d1d9990da0fb5b754e9e29664b4cc0b6fa[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Aug 2 12:32:39 2019 +0300
+
+    Добавление прайса в меню и страницы с прайсом
+
+[33mcommit 69412301c1ed2f939dfc55080d14470a1b8a7292[m
+Merge: cc375d9 583eddb
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Jul 25 15:41:45 2019 +0000
+
+    Merged in dev (pull request #31)
+    
+    Добавление документов на странице
+
+[33mcommit 583eddb48a1e8f838148768000f140f1f827b5e6[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Jul 25 18:40:41 2019 +0300
+
+    Добавление документов на странице
+
+[33mcommit cc375d9c63e385eb1353c7cc7d983a5497333a11[m
+Merge: 409aed2 66c2940
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Jul 17 15:54:46 2019 +0000
+
+    Merged in dev (pull request #30)
+    
+    Изменения вывода фильтра по месяцам и меню сервис
+
+[33mcommit 66c2940c35a113dc19d857e6b1697eae328fa119[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Jul 17 18:53:02 2019 +0300
+
+    Изменения вывода фильтра по месяцам и меню сервис
+
+[33mcommit 409aed2553a07bf593f9721aa70c10b70f078081[m
+Merge: 0e45c33 4147fe8
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Jul 11 07:27:21 2019 +0000
+
+    Merged in dev (pull request #29)
+    
+    Доработка шаблона вывода писем в отзывах, доработка вывода карточки курса
+
+[33mcommit 4147fe8b4d3ce7ea95c0761f318aca87e5dd70d3[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Jul 11 10:26:13 2019 +0300
+
+    Доработка шаблона вывода писем в отзывах, доработка вывода карточки курса
+
+[33mcommit 0e45c33676ea7ca9103f8218b3e499f1b6980779[m
+Merge: d6f8888 3e09963
+Author: Kloman <vd@westpower.ru>
+Date:   Tue Jul 9 07:49:06 2019 +0000
+
+    Merged in dev (pull request #28)
+    
+    Изменение вывода отзывов, изменение формы на главной странице для защиты от спама, изменение вывода продолжительности курса
+
+[33mcommit 3e099636ddbf13e5eb5951577c91d5d24d2c7c2e[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Jul 9 10:47:40 2019 +0300
+
+    Изменение вывода отзывов, изменение формы на главной странице для защиты от спама, изменение вывода продолжительности курса
+
+[33mcommit d6f88888d61d4314ae618f4a471a54f4320d5c8d[m
+Merge: a17582a a091ccb
+Author: Kloman <vd@westpower.ru>
+Date:   Mon Jul 1 15:49:56 2019 +0000
+
+    Merged in dev (pull request #27)
+    
+    Правка шаблонов отзывов
+
+[33mcommit a091ccb69cfd005c4cfca4069b030713a8668318[m
+Author: root <root@support27.fvds.ru>
+Date:   Mon Jul 1 18:47:29 2019 +0300
+
+    Правка шаблонов отзывов
+
+[33mcommit a17582a46da3721197ddab7aeb7e814828871844[m
+Merge: 5280fbc ae10147
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Jun 26 15:54:23 2019 +0000
+
+    Merged in dev (pull request #26)
+    
+    Изменён вывод видео отзывов,изменён вывод кнопки удалённого прохождения курса
+
+[33mcommit ae1014724b2e6ef1f3a28e8ab2ebc5afccde37e0[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Jun 26 18:52:38 2019 +0300
+
+    Изменён вывод видео отзывов,изменён вывод кнопки удалённого прохождения курса
+
+[33mcommit 5280fbca13d7f886ab101e85a1b3cac67b1f4c1b[m
+Merge: aa56317 24fa378
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Jun 21 15:31:05 2019 +0000
+
+    Merged in dev (pull request #25)
+    
+    Изменения вывода формы проедения курса, вывода колличества курсов в карточке преподавателя
+
+[33mcommit 24fa378219243977c31e481042e9f56e7e7e6c5c[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Jun 21 18:29:24 2019 +0300
+
+    Изменения вывода формы проедения курса, вывода колличества курсов в карточке преподавателя
+
+[33mcommit aa563172bb784a5d27dc4521ead1b6b748a09c4c[m
+Merge: 18a8204 7ffd55c
+Author: Kloman <vd@westpower.ru>
+Date:   Mon Jun 17 13:39:02 2019 +0000
+
+    Merged in dev (pull request #24)
+    
+    Правки:сортировка курсов,target _blank для пользовательского соглашения и условий конф., колличество курсов в списке подразделов
+
+[33mcommit 7ffd55c80a00abe8a958150d41416153db055980[m
+Author: root <root@support27.fvds.ru>
+Date:   Mon Jun 17 16:36:59 2019 +0300
+
+    Правки:сортировка курсов,target _blank для пользовательского соглашения и условий конф., колличество курсов в списке подразделов
+
+[33mcommit 18a82042286774436bce914f1e68e9c7f4813896[m
+Merge: b7c6101 d869a6e
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Jun 14 14:11:56 2019 +0000
+
+    Merged in dev (pull request #23)
+    
+    правки для кнопки поиска
+
+[33mcommit d869a6ee4a5d26d9b7e0c89e11fbff2cf3be1386[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Jun 14 17:10:59 2019 +0300
+
+    правки для кнопки поиска
+
+[33mcommit b7c61012a4437e018ab399f538ec1f72e4f08d9b[m
+Merge: bd2d58e 7c3762c
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Jun 14 13:58:05 2019 +0000
+
+    Merged in dev (pull request #22)
+    
+    Стили кнопки поиска
+
+[33mcommit 7c3762c38232c037c5a4f0e6a8bd16da65fdd88f[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Jun 14 16:56:58 2019 +0300
+
+    Стили кнопки поиска
+
+[33mcommit bd2d58ed15c40b53568063de310bbb55d65471c7[m
+Merge: 6f95411 d4a5607
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Jun 14 13:38:39 2019 +0000
+
+    Merged in dev (pull request #21)
+    
+    Правка компонента page.search
+
+[33mcommit d4a5607441503933de7ec53491febd2c93100919[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Jun 14 16:37:25 2019 +0300
+
+    Правка компонента page.search
+
+[33mcommit 6f95411989b0d49a958b11c953608067a3d45329[m
+Merge: 20c9d77 6c661ba
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Jun 13 15:20:14 2019 +0000
+
+    Merged in dev (pull request #20)
+    
+    Капча в контактах и курсы без даты
+
+[33mcommit 6c661bacb0020bacbecd21f6dea2e90711c5d5a6[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Jun 13 18:18:30 2019 +0300
+
+    Капча в контактах и курсы без даты
+
+[33mcommit 20c9d77819a8f3c9fbbd789cdaebb9f76b1cbc0f[m
+Merge: 8221b97 8259d5d
+Author: Kloman <vd@westpower.ru>
+Date:   Mon Jun 10 14:30:13 2019 +0000
+
+    Merged in dev (pull request #19)
+    
+    Изменение фильтрации по форме обучения
+
+[33mcommit 8259d5d32f387b44b77599f41534488015b68457[m
+Author: root <root@support27.fvds.ru>
+Date:   Mon Jun 10 17:28:02 2019 +0300
+
+    Изменение фильтрации по форме обучения
+
+[33mcommit 8221b97367145bb8a5b1de29e7e7dc83b3f81c7d[m
+Merge: 593ce74 3c03d32
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Jun 6 15:37:45 2019 +0000
+
+    Merged in dev (pull request #18)
+    
+    Капчи на формы
+
+[33mcommit 3c03d32d22f4727007b7b9fd2f78b6f8da57f391[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Jun 6 18:35:05 2019 +0300
+
+    Капчи на формы
+
+[33mcommit 593ce74d51ee2ec6557c76910a16eeac41d69be4[m
+Merge: 35dcb34 c1205c9
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Jun 5 12:24:35 2019 +0000
+
+    Merged in dev (pull request #17)
+    
+    Убрали надпись Загрузить полное расписание данного направления
+
+[33mcommit c1205c9a5976a2f525f5f44673b0f6f3462f87c6[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Jun 5 15:23:42 2019 +0300
+
+    Убрали надпись Загрузить полное расписание данного направления
+
+[33mcommit 35dcb348a030689899c8d2f3442f1d2f7e0aaeca[m
+Merge: 2a44f0b d891a78
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Jun 5 11:54:43 2019 +0000
+
+    Merged in dev (pull request #16)
+    
+    Изменения кнопок
+
+[33mcommit d891a786115bdce2419c0a619be327bac7425012[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Jun 5 14:52:28 2019 +0300
+
+    Изменения кнопок
+
+[33mcommit 2a44f0b5fd98a8d27f4ef46b0611b0a2dc568681[m
+Merge: 8981a93 368fa3d
+Author: Kloman <vd@westpower.ru>
+Date:   Tue Jun 4 13:01:09 2019 +0000
+
+    Merged in dev (pull request #15)
+    
+    fast fix
+
+[33mcommit 368fa3d41693bef8950c67d400266ef1ac4d4304[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Jun 4 15:58:16 2019 +0300
+
+    fast fix
+
+[33mcommit 8981a934ec6b828b6aebe7a31e8c46d6d14f7a39[m
+Merge: 810d8fe cbf31a2
+Author: root <root@support27.fvds.ru>
+Date:   Tue Jun 4 15:20:09 2019 +0300
+
+    Merge branch 'master' of https://bitbucket.org/westpower_ais/ais
+
+[33mcommit 810d8fea7fa260fade6a256d863bc7ab20e4c8ca[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Jun 4 15:19:38 2019 +0300
+
+    master changes
+
+[33mcommit cbf31a29f4d3bb01c4a332936aafccda5206e9a0[m
+Author: Kloman <vd@westpower.ru>
+Date:   Tue Jun 4 11:22:54 2019 +0000
+
+    robots.txt отредактирован онлайн на Bitbucket
+
+[33mcommit 8d6e569cbaa1bde30e4f1df202e4b0dfedc40bdb[m
+Merge: c27f524 b58f0e3
+Author: Kloman <vd@westpower.ru>
+Date:   Tue Jun 4 11:22:10 2019 +0000
+
+    Merged in dev (pull request #14)
+    
+    Вторничный залив
+
+[33mcommit b58f0e3dbc2d7f0754ff2529bbe83cc9139ae652[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Jun 4 14:15:39 2019 +0300
+
+    Вторничный залив
+
+[33mcommit c27f5244f63c7334e9506e8cbad7ab074627c418[m
+Merge: c212983 7ca5422
+Author: Kloman <vd@westpower.ru>
+Date:   Wed May 22 09:45:03 2019 +0000
+
+    Merged in dev (pull request #13)
+    
+    cron_fix
+
+[33mcommit 7ca5422640f10567e934a50109edb6586545127b[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed May 22 12:42:14 2019 +0300
+
+    cron_fix
+
+[33mcommit c2129836d5acaaeb207541f1cb4ec3f69cbcbd22[m
+Merge: 6ff6d7c d06a838
+Author: Kloman <vd@westpower.ru>
+Date:   Thu May 16 15:17:47 2019 +0000
+
+    Merged in dev (pull request #12)
+    
+    footer_commit
+
+[33mcommit d06a8383823e640a5a94f7cfbc4b31bc04872435[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu May 16 18:16:21 2019 +0300
+
+    footer_commit
+
+[33mcommit 6ff6d7c7714ada402adefcc4b0ff2d80143c63cf[m
+Merge: 3640b0d b3f1b3d
+Author: Kloman <vd@westpower.ru>
+Date:   Mon May 13 08:34:47 2019 +0000
+
+    Merged in dev (pull request #11)
+    
+    Пагинация с возвратом
+
+[33mcommit b3f1b3d3ee998dc8331df783b171c4b27de373a2[m
+Author: root <root@support27.fvds.ru>
+Date:   Mon May 13 11:33:10 2019 +0300
+
+    Пагинация с возвратом
+
+[33mcommit 3640b0dd19c9648be9ecfe2c63dd70f0f439723e[m
+Merge: 8476199 6404781
+Author: Kloman <vd@westpower.ru>
+Date:   Mon May 6 15:26:35 2019 +0000
+
+    Merged in dev (pull request #10)
+    
+    Правки от 6.05.19
+
+[33mcommit 6404781577b1902975888832df9abd452099dda8[m
+Author: root <root@support27.fvds.ru>
+Date:   Mon May 6 18:23:54 2019 +0300
+
+    Правки от 6.05.19
+
+[33mcommit 8476199ffb5001dc65bd07e063f8026ab978af7f[m
+Merge: 7b4417b af6c6ad
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Apr 19 15:44:08 2019 +0000
+
+    Merged in dev (pull request #9)
+    
+    section_pagination_fix
+
+[33mcommit af6c6ad8a566af241c240d1f7bc5c89eacbeb296[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Apr 19 18:43:19 2019 +0300
+
+    section_pagination_fix
+
+[33mcommit 7b4417b7be90de57186da0b2fc9241327a519870[m
+Merge: 797524b f2fc617
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Apr 19 14:42:47 2019 +0000
+
+    Merged in dev (pull request #8)
+    
+    again fucking fix
+
+[33mcommit f2fc617f9158460f21291bf59b941995ee8a8da7[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Apr 19 17:41:59 2019 +0300
+
+    again fucking fix
+
+[33mcommit 797524b60001acef468d4a8f0a230d75764c6a3c[m
+Merge: 358254f 9b39b09
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Apr 19 14:17:57 2019 +0000
+
+    Merged in dev (pull request #7)
+    
+    fix_again-__-
+
+[33mcommit 9b39b0901a2d54a602229b64042b97223b07f837[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Apr 19 17:17:01 2019 +0300
+
+    fix_again-__-
+
+[33mcommit 358254f1db652f1c086cf1be0e6dbb70aa9ae0fc[m
+Merge: b1bc14a ecd19bd
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Apr 19 11:29:54 2019 +0000
+
+    Merged in dev (pull request #6)
+    
+    fast_fix_review_form_again
+
+[33mcommit ecd19bd890c97d392539b154cc61a3aa4b79f7a5[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Apr 19 14:29:14 2019 +0300
+
+    fast_fix_review_form_again
+
+[33mcommit b1bc14ab8b1da366f80ad8bf1e5bb0ee69c34bd0[m
+Merge: 3fe72c4 c57c519
+Author: Kloman <vd@westpower.ru>
+Date:   Fri Apr 19 11:24:06 2019 +0000
+
+    Merged in dev (pull request #5)
+    
+    fast_review_form_fix
+
+[33mcommit c57c519efaf1acddb0f5d7f19985432747c5b952[m
+Author: root <root@support27.fvds.ru>
+Date:   Fri Apr 19 14:23:08 2019 +0300
+
+    fast_review_form_fix
+
+[33mcommit 3fe72c46a1df5b181e5d4a98c7e45afc4fe7141a[m
+Merge: b1178a5 65985d4
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Apr 18 16:02:43 2019 +0000
+
+    Merged in dev (pull request #4)
+    
+    fucking reviews
+
+[33mcommit 65985d489f5476354c2acf43a19e463313609b7f[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Apr 18 19:01:12 2019 +0300
+
+    fucking reviews
+
+[33mcommit b1178a5e786e04459efd3f7f9084c1210e97110d[m
+Merge: aea8c0b 7400253
+Author: Kloman <vd@westpower.ru>
+Date:   Thu Apr 18 15:30:50 2019 +0000
+
+    Merged in dev (pull request #3)
+    
+    dev_to_master_update
+
+[33mcommit 74002535fa25a1bb8f981460995840563fae1a76[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Apr 18 18:25:47 2019 +0300
+
+    coop_prepod
+
+[33mcommit aea8c0b9b082736d4c57a8e92fc785d6370a89d4[m
+Merge: a0dc6dd 06daffd
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Apr 17 16:09:44 2019 +0000
+
+    Merged in dev (pull request #2)
+    
+    fix dev
+
+[33mcommit 06daffd472cebfb4c64789747a64d67c23cf8c06[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Apr 17 19:07:49 2019 +0300
+
+    fix dev
+
+[33mcommit a399f1557fe1fb3f86dfc9f26df7ddfc1f9e9915[m
+Merge: e66100f a0dc6dd
+Author: Kloman <vd@westpower.ru>
+Date:   Wed Apr 17 16:05:11 2019 +0000
+
+    Merged in master (pull request #1)
+    
+    Master
+
+[33mcommit a0dc6dd3b2481a572688d8c4ff26ae21a739f464[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Apr 17 19:00:55 2019 +0300
+
+    fix from master
+
+[33mcommit 0b14e8ac37bfc8be733b49c8cd3e4b10420698e7[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Apr 17 18:57:26 2019 +0300
+
+    fix
+
+[33mcommit 4e5fed22c7eafaec23733c1ceeb2af45c77a2dd8[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Apr 17 18:37:11 2019 +0300
+
+    script.js
+
+[33mcommit 6b08c9029252bb62851e0405d5cdf077927f7801[m
+Merge: e51e55f 8ab138b
+Author: root <root@support27.fvds.ru>
+Date:   Wed Apr 17 18:32:36 2019 +0300
+
+    kp & rewiews
+
+[33mcommit e51e55f0ebfa6bb6f3c21eac3456e3f20f3ebf0b[m
+Author: root <root@support27.fvds.ru>
+Date:   Wed Apr 17 18:17:44 2019 +0300
+
+    rewiews and kp
+
+[33mcommit 8ab138bda9eac20635422c81f6346834af1c4a86[m
+Merge: b7e81b3 badcea9
+Author: root <root@support27.fvds.ru>
+Date:   Tue Apr 9 11:42:52 2019 +0300
+
+    Merge branch 'master' of https://bitbucket.org/westpower_ais/ais
+    
+     the commit.
+
+[33mcommit b7e81b3bbc368524ecac34629691fe0e13325602[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Apr 9 11:30:25 2019 +0300
+
+    master_update_1
+
+[33mcommit badcea9776093c513b7cc5086327cf827f856c62[m
+Merge: 43b961d e66100f
+Author: Kloman <vd@westpower.ru>
+Date:   Tue Apr 9 10:23:26 2019 +0200
+
+    dev слито с master
+
+[33mcommit e66100f9c7c95a956db5ab99383e9c0f2c100b7d[m
+Author: root <root@support27.fvds.ru>
+Date:   Tue Apr 9 11:21:29 2019 +0300
+
+    KP course_code_mentor
+
+[33mcommit 43b961d3528c3c5b832f4db365e145cb093e6e22[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Mar 28 16:56:29 2019 +0300
+
+    robot
+
+[33mcommit 5718e3f0a1b82fb10c39fa47576620904374204d[m
+Author: root <root@support27.fvds.ru>
+Date:   Thu Mar 28 16:34:39 2019 +0300
+
+    first commit

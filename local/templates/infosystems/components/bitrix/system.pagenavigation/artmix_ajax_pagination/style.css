@@ -1,0 +1,142 @@
+.ax-pagination {
+    clear: both;
+	padding: 20px 0 20px;
+}
+.ax-pagination *{
+	font-size: 16px;
+}
+.ax-pagination a{
+	text-decoration: none !important;
+}
+
+.ax-pagination .ax-show-more-pagination {
+    display: block;
+    margin: 0 auto 20px;
+	text-decoration: none;
+}
+
+.ax-pagination .ax-link{
+	color: #00248d;
+	text-decoration: none;
+	-webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	-moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	-ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	-o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+}
+.ax-pagination .ax-link:active{
+	text-decoration: none;
+}
+.ax-pagination .ax-link:hover{
+	color: #000;
+}
+.ax-pagination .ax-link.ax-dotted-link{
+	/*border-bottom: 1px dotted #4baa80;*/
+    border: 1px solid #00248d;
+    padding: 5px 12px;
+}
+.ax-pagination .ax-link.ax-dotted-link:hover{
+    border: 1px solid #8c8c8c;
+    text-decoration: none;
+    padding: 5px 12px;
+    background-color: #d4d4d4;
+}
+.ax-pagination .ax-no-more{
+	color: #333333;
+    border: 1px solid #8c8c8c;
+    text-decoration: none;
+    background-color: #e6e6e6;
+    padding: 5px 12px;
+}
+
+.ax-pagination .ax-pagination-container {
+	text-align: center;
+	position: relative;
+}
+.ax-pagination .ax-pagination-container ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+.ax-pagination .ax-pagination-container ul li {
+	display: inline-block;
+	margin: 0 2px 15px 2px;
+}
+.ax-pagination .ax-pagination-container ul li span{
+    -webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	-moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	-ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	-o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	padding: 0 8px;
+	display: block;
+	height: 32px;
+	min-width: 32px;
+	line-height: 32px;
+	color: #00248d;
+	font-size: 16px;
+	vertical-align: middle;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ax-pagination .ax-pagination-container ul li a {
+	text-decoration: none;
+	display: block;
+	height: 32px;
+	min-width: 32px;
+	line-height: 32px;
+	color: #00248d;
+	vertical-align: middle;
+}
+.ax-pagination .ax-pagination-container ul li a:hover span{
+	color: #000;
+}
+.ax-pagination .ax-pagination-container ul li.ax-active span{
+	background: #00248d;
+	color: #fff;
+}
+.ax-pagination .ax-pagination-container ul li.ax-pag-prev{
+	margin-right: 15px;}
+.ax-pagination .ax-pagination-container ul li.ax-pag-next{
+	margin-left: 15px;
+}
+.ax-pagination .ax-pagination-container ul li.ax-pag-all a span,
+.ax-pagination .ax-pagination-container ul li.ax-pag-prev a span,
+.ax-pagination .ax-pagination-container ul li.ax-pag-next a span {
+	line-height: 28px;
+	padding: 0 18px;
+	color: #00248d;
+}
+.ax-pagination .ax-pagination-container ul li.ax-pag-all span,
+.ax-pagination .ax-pagination-container ul li.ax-pag-prev span,
+.ax-pagination .ax-pagination-container ul li.ax-pag-next span{
+	color: #bebebe;
+	line-height: 28px;
+	padding: 0 18px;
+}
+.ax-pagination .ax-pagination-container ul li.ax-pag-all a:hover span,
+.ax-pagination .ax-pagination-container ul li.ax-pag-prev a:hover span,
+.ax-pagination .ax-pagination-container ul li.ax-pag-next a:hover span {
+	/*background: #fff;*/
+	color: #000;
+}
+
+/*color schemes*/
+.ax-pagination.ax-grey .ax-pagination-container ul li.ax-active span{
+	background: #e3e3e3;
+	color: #000;
+}
+
+
+@media screen and (max-width: 767px){
+    .ax-pagination .ax-link.ax-dotted-link{
+        width: 95% !important;
+        display: inline-block;
+    }
+    .ax-pagination .ax-no-more{
+        width: 95% !important;
+        display: inline-block;
+    }
+}

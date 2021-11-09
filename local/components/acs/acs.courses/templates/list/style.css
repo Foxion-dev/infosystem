@@ -1,0 +1,28 @@
+.item-content-click a{
+	-webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+    color: #fff;
+    border: 0;
+    background: none;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 10px 25px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    font-family: 'OpenSans-ExtraBold', Arial, Tahoma, Sans-Serif;
+    background: #77b509;
+    outline: none;
+    color: #fff !important;
+    padding: 8px 4px;
+    text-align: center;
+    display: block;
+    margin-bottom: 7px;
+    width: 100%;
+	text-align: center;
+    display: block;
+    color: #77b509;
+    font-size: 12px;
+    font-family: 'OpenSans-Bold', Arial, Tahoma, Sans-Serif;
+	color: #fff !important;
+}

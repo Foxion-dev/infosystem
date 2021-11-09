@@ -1,0 +1,19 @@
+.news-line-index button.owl-prev, .news-line-index button.owl-next {
+    display: block!important;
+	position:absolute;
+}
+.news-line-index{position: relative;}
+.news-line-index button.owl-prev{
+	top: 50px;
+    bottom: 0;
+    left: -35px;
+}
+.news-line-index button.owl-next{
+	top: 50px;
+    bottom: 0;
+    right: -35px;
+}
+.news-line-index .owl-dots {
+bottom: -30px!important;
+}
+.news-line-index .title{padding-top:10px;overflow: initial;height:auto!important;}

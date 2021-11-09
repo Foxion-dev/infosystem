@@ -1,0 +1,12 @@
+.nearest-courses-items-body{ text-decoration: none !important; }
+.item-content-click-more{ text-decoration: none !important; font-size: 13px !important; padding-top: 15px; padding-bottom: 10px; display: block; }
+.nearest-courses .nearest-courses-items{ box-shadow: none !important; }
+.nearest-courses-items-footer{ padding: 10px 20px; padding-left: 30px; background-color: #77b509; color: #fff; }
+.nearest-courses-items-footer a{ display: inline-block; margin-right: 15px;  color: #fff !important; text-decoration: none !important; font-size: 12px; font-family: 'OpenSans-ExtraBold', Arial, Tahoma, Sans-Serif; }
+.nearest-courses-items-footer a:hover{ text-decoration: underline !important; }
+.nearest-courses-items-footer a i{ font-size: 14px; margin-right: 5px; vertical-align: middle; }
+.nearest-courses .nearest-courses-items .nearest-courses-items-body{ padding: 25px 15px 25px 30px !important; }
+
+@media screen and (max-width: 767px) {
+  .personal-user-oll { display: none; }
+}

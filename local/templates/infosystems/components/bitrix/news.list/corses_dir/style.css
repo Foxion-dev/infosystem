@@ -1,0 +1,8 @@
+.ff-title{padding-bottom:30px;font-style: normal;font-weight: normal;font-size: 28px;line-height: 38px;}
+.bx-name-direct{font-style: normal;font-weight: bold;font-size: 32px;line-height: 44px;color: #272727;padding-top:50px;}
+
+@media(max-width:992px){
+.btn-z{position:relative!important;margin-top: 30px;margin-bottom: 10px;}
+.academy-container-about .preview_picturee{width: 100%!important;}
+	.bx-name-direct{padding-top:0px;}
+}

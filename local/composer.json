@@ -1,0 +1,23 @@
+{
+    "name": "first-top/infosystems",
+    "description": "",
+    "version": "0.0.1",
+    "autoload": {
+        "psr-4": {
+            "InfoSystems\\": "src/"
+        }
+    },
+    "require": {
+        "andreyryabin/sprint.migration": "^3.25",
+        "middlewares/fast-route": "^1.2",
+        "middlewares/request-handler": "^1.4",
+        "google/recaptcha": "^1.2",
+        "webarchitect609/bitrix-iblock-property-type": "^1.2",
+        "guzzlehttp/guzzle": "7.2.0"
+    },
+    "extra": {
+      "installer-paths": {
+        "modules/{$name}/": ["type:bitrix-module"]
+      }
+    }
+}

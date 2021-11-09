@@ -1,0 +1,10 @@
+.bx-rating{ display: inline-block; margin: 0px auto; text-align: center; padding: 0px 0px; position: absolute;      right: 60px;   bottom: -40px; }
+.favorPressaAdd{ color: #fff; font-size: 25px; background: #77b509; padding: 7px 9px; border-radius: 20px; }
+.active .favorPressaAdd{ color: #77b509; background: #fff; }
+.bx-rating .favorPressaAdd{ display: block; text-align: center; cursor: pointer; }
+.bx-rating-text{ display: block; text-align: center; font-size: 12px; padding: 5px 0px; }
+.bx-rating-star i { margin-right: 3px; font-size: 30px; color: #77b509; }
+.bx-rating-star i.bx-star-active:before{ content: "\f005"; }
+.bx-rating-star i.cursor-pointer{cursor: pointer;}
+.bx-rating-star i:last-child { margin-right: 0; }
+.bx-rating-body{ z-index: 1030; display: none; position: absolute; top: 45px; right: -20px; width: 190px; padding: 5px 5px; height: auto; border-radius: 10px; border: 1px solid #e6e6e6; background-color: #fff; box-shadow: 0 10px 20px -5px rgba(0,0,0,0.4); }

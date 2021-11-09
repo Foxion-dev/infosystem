@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 546.082 546.311"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#8cd50b;stroke-width:0.541701}
+    .fil1 {fill:none}
+    .fil0 {fill:#8cd50b}
+    //.fil0 {fill:transparent}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path id="path0" stroke="#8cd50b" stroke-width="0" fill="none" d="M 269.418 128.683  L 80.824,79.5913 L 268.601,0.572036 L 450.4 75.8z" />
+  <circle id="circle0" class="fil0" r="8.45081"/>
+  <animateMotion xlink:href="#circle0" dur="8s" repeatCount="indefinite">
+    <mpath xlink:href="#path0"/>
+  </animateMotion>
+
+  <path id="path1" stroke="#8cd50b" stroke-width="0" fill="none" d="M 460.4 78.8z   L 262.706 284.678  L 460.4 78.8z" />
+  <circle id="circle1" class="fil0" r="8.45081"/>
+  <animateMotion xlink:href="#circle1" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path1"/>
+  </animateMotion>
+
+  <path id="path2" stroke="#8cd50b" stroke-width="0" fill="none" d="M 544.169 344.116 L 443.169 317.116   L 260.706 270.678 L 544.169 344.116" />
+  <circle id="circle2" class="fil0" r="8.45081"/>
+   <animateMotion xlink:href="#circle2" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path2"/>
+  </animateMotion>
+
+  <path id="path3" stroke="#8cd50b" stroke-width="0" fill="none" d="M 447.359 470.63 L 410.359 430.63  L 260.706 270.678 L 447.359 470.63" />
+  <circle id="circle3" class="fil0" r="8.45081"/>
+  <animateMotion xlink:href="#circle3" dur="4s" repeatCount="indefinite">
+    <mpath xlink:href="#path3"/>
+  </animateMotion>
+
+  <path id="path4" stroke="#8cd50b" stroke-width="0" fill="none" d="M 447.359 470.63 L 410.359 430.63  L 260.706 270.678 L 447.359 470.63" />
+  <circle id="circle4" class="fil0" r="8.45081"/>
+  <animateMotion xlink:href="#circle4" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path4"/>
+  </animateMotion>
+
+  <path id="path5" stroke="#8cd50b" stroke-width="0" fill="none" d="M 267.706 277.678 L 455.0 478.0 L 357.258 475.852  L 83.258 470.852 L 267.706 277.678" />
+  <circle id="circle5" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle5" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path5"/>
+  </animateMotion>
+
+
+  <path id="path6" stroke="#8cd50b" stroke-width="0" fill="none" d="M 265.172 544.026  L 210.172 404.026 L 80.824 79.5913  L 80.824 79.5913 L 455.0 478.0 L 265.172 544.026" />
+  <circle id="circle6" class="fil0" r="8.45081"/>
+  <animateMotion xlink:href="#circle6" dur="8s" repeatCount="indefinite">
+    <mpath xlink:href="#path6"/>
+  </animateMotion>
+
+
+  <path id="path7" stroke="#8cd50b" stroke-width="0" fill="none" d="M 120.316 188.712 L 0.316 335.712 L 267.706 277.678 L 268.601 5.7 L 120.316 188.712" />
+  <circle id="circle7" class="fil0" r="8.45081"/>
+  <animateMotion xlink:href="#circle7" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path7"/>
+  </animateMotion>
+
+
+  <!--/// L 267.706 277.678 -->
+  <path id="path8" stroke="#8cd50b" stroke-width="0" fill="none" d="M 28.062 200.0734  L 155.062 98.0734  L 268.601 5.7  L 267.706 277.678 L 267.706 544.678 L 75.258 468.852 L 28.062 200.0734" />
+  <circle id="circle8" class="fil0" r="8.45081"/>
+  <animateMotion xlink:href="#circle8" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path8"/>
+  </animateMotion>
+
+  <path id="path9" stroke="#8cd50b" stroke-width="0" fill="none" d="M 52.0881 325.103  L 267.706 277.678 L 83.258 470.852 L 77.258 470.852 L 3.0881 335.103 L 52.0881 325.103" />
+  <circle  id="circle9" class="fil0" r="8.45081"/>
+   <animateMotion xlink:href="#circle9" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path9"/>
+  </animateMotion>
+
+  <path id="path10" stroke="#8cd50b" stroke-width="0" fill="none" d="M 105.14 138.872  L 267.706 544.678 L 522.706 208.678 L 268.601,0.572036 L 80.824,79.5913 L 105.14 138.872" />
+  <circle id="circle10" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle10" dur="8s" repeatCount="indefinite">
+    <mpath xlink:href="#path10"/>
+  </animateMotion>
+
+  <path id="path11" stroke="#8cd50b" stroke-width="0" fill="none" d="M 121.422 122.59  L 28.062 200.0734 L 75.258 468.852 L 85.258 468.852 L 267.706 277.678 L 121.422 122.59" />
+  <circle id="circle11" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle11" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path11"/>
+  </animateMotion>
+
+  <path id="path12" stroke="#8cd50b" stroke-width="0" fill="none" d="M 148.497 152.902  L 267.706 277.678 L 85.258 468.852 L 75.258 468.852 L 5.258 336.852 L 9.258 204.852 L 80.824,79.5913 L 148.497 152.902" />
+  <circle id="circle12" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle12" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path12"/>
+  </animateMotion>
+
+  <path id="path13" stroke="#8cd50b" stroke-width="0" fill="none" d="M 186.622 106.735  L 3.258 333.852  L 267.706 277.678 L 268.601,5 L 186.622 106.735" />
+  <circle id="circle13" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle13" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path13"/>
+  </animateMotion>
+
+  <path id="path14" stroke="#8cd50b" stroke-width="0" fill="none" d="M 385.944,95.0396  L 268.601,2 L 460.601,80 L 267.706 277.678 L 269.418 128.683 L 385.944,95.0396" />
+  <circle id="circle14" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle14" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path14"/>
+  </animateMotion>
+
+  <path id="path15" stroke="#8cd50b" stroke-width="0" fill="none" d="M 129.5,206.002  L 545.601,205 L 95.601,480 L 85.258 468.852 L 75.258 468.852 L 29.5,205.002 L 129.5,206.002" />
+  <circle id="circle15" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle15" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path15"/>
+  </animateMotion>
+
+  <path id="path16" stroke="#8cd50b" stroke-width="0" fill="none" d="M 186.622 106.735  L 3.258 333.852  L 267.706 277.678 L 268.601,5 L 186.622 106.735" />
+  <circle id="circle16" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle16" dur="8s" repeatCount="indefinite">
+    <mpath xlink:href="#path16"/>
+  </animateMotion>
+
+  <path id="path17" stroke="#8cd50b" stroke-width="0" fill="none" d="M 9.258 204.852 L 80.234 225.706  L 269.706 273.678 L 544.169 344.116 L 9.258 204.852" />
+  <circle id="circle17" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle17" dur="8s" repeatCount="indefinite">
+    <mpath xlink:href="#path17"/>
+  </animateMotion>
+
+  <path id="path18" stroke="#8cd50b" stroke-width="0" fill="none" d="M 545.601,205 L 95.601,480 L 545.601,205" />
+  <circle id="circle18" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle18" dur="8s" repeatCount="indefinite">
+    <mpath xlink:href="#path18"/>
+  </animateMotion>
+
+  <path id="path24" stroke="#8cd50b" stroke-width="0" fill="none" d="M 538.601,205 L 537.169 344.116 L 524.169 344.116 L 268.172 544.026 L 522.706 208.678 L 545.601,205" />
+  <circle id="circle24" class="fil0" r="8.45081"/>
+  <animateMotion xlink:href="#circle24" dur="8s" repeatCount="indefinite">
+    <mpath xlink:href="#path24"/>
+  </animateMotion>
+
+  <path id="path25" stroke="#8cd50b" stroke-width="0" fill="none" d="M 268.601,0.572036 L 460.4 78.8  L 545.201,205  L 537.169,344.116  L 455.0 478.0 L 267.706 544.678  L 75.258 468.852 L 5.258 336.852 L 9.258 204.852 L 80.824,79.5913 L 268.601,0.572036" />
+  <circle id="circle25" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle25" dur="9s" repeatCount="indefinite">
+    <mpath xlink:href="#path25"/>
+  </animateMotion>
+  <circle id="circle26" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle26" dur="8s" repeatCount="indefinite">
+    <mpath xlink:href="#path25"/>
+  </animateMotion>
+  <circle id="circle27" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle27" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path25"/>
+  </animateMotion>
+
+  <path id="path-circle" fill="none" d="
+        M 269.473, 271.698
+        m -140.886, 0
+        a 140.886,140.886 0 1,0 281.772,0
+        a 140.886,140.886 0 1,0 -281.772,0
+    "/>
+  <circle id="circle19" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle19" dur="10s" repeatCount="indefinite">
+    <mpath xlink:href="#path-circle"/>
+  </animateMotion>
+
+  <circle id="circle20" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle20" dur="8s" repeatCount="indefinite">
+    <mpath xlink:href="#path-circle"/>
+  </animateMotion>
+
+  <circle id="circle21" class="fil0" r="4.69486"/>
+   <animateMotion xlink:href="#circle21" dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#path-circle"/>
+  </animateMotion>
+
+  <circle id="circle22" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle22" dur="5s" repeatCount="indefinite">
+    <mpath xlink:href="#path-circle"/>
+  </animateMotion>
+
+  <circle id="circle23" class="fil0" r="4.69486"/>
+  <animateMotion xlink:href="#circle23" dur="4s" repeatCount="indefinite">
+    <mpath xlink:href="#path-circle"/>
+  </animateMotion>
+
+  <!--<circle class="fil0" cx="175.667" cy="377.421" r="4.69486"/>
+  <circle class="fil0" cx="132.199" cy="305.868" r="4.69486"/>
+  <circle class="fil0" cx="132.793" cy="238.269" r="4.69486"/>-->
+
+
+  <polygon  class="fil1 str0" points="270.065,545.915 268.601,0.572036 523.163,209.085 270.021,542.911 270.052,541.163 530.775,339.44 5.48689,205.218 5.48689,205.218 543.696,203.709 538.696,339.134 455.607,478.359 80.824,79.5913 268.946,129.155 455.607,74.9238 545.696,203.709 95.5003,477.847 83.484,470.711 458.466,79.0117 268.601,0.572036 80.824,79.5913 10.3105,205.204 5.48689,340.643 76.8492,470.575 "/>
+  <polyline class="fil1 str0" points="80.824,79.5913 265.971,544.319 455.607,478.359 76.8492,470.575 28.3841,198.619 268.617,6.41212 0.698795,335.855 269.473,276.284 "/>
+  <circle class="fil1 str0" cx="269.473" cy="271.698" r="140.886"/>
+
+ </g>
+</svg>
