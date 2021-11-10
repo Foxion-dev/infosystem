@@ -14,5 +14,7 @@ final class UserTypeInitializer
     {
         //Привязка к пользовательскому соглашению
         (new \InfoSystems\UserType\Iblock\AgreementLinkType())->init();
+        //Даты проведения курса
+        (new \InfoSystems\UserType\Iblock\DateCoursesType())->init();
     }
 }
